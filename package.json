@@ -1,8 +1,8 @@
 {
-  "name": "GFP-4241-node",
+  "name": "cs4241-a3-YOURNAME",
   "version": "0.0.1",
-  "description": "WPI CS 4241 assignment 3",
-  "author": "Hoang Ngo",
+  "description": "WPI CS 4241 Assignment 3",
+  "author": "",
   "private": true,
   "scripts": {
     "start": "node server.js"
