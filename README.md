@@ -14,16 +14,16 @@ Do the following to complete this assignment:
     * A blank `style.css` file that you will use to style your own content
 2. The goal of this project is to set up basic filter functionality. You will need a list and a place for user input to place a filter on that list. You will also need to have the functionality to send the URL to someone else and have the website display the same filter as the one you just had in place. For example:
 	* You have the list of movies:
-	** Jaws
-	** Jaws 2
-	** Jaws 3
-	** Space Jame
-	** Big Fish
-	** The Illusionist
+		* Jaws
+		* Jaws 2
+		* Jaws 3
+		* Space Jame
+		* Big Fish
+		* The Illusionist
 	* When the use inputs "Jaws" the list becomes:
-	** Jaws
-	** Jaws 2
-	** Jaws 3
+		* Jaws
+		* Jaws 2
+		* Jaws 3
 	* Hint: Your URL would look something like www.______.com/index?search=jaws
 3. Deploy your project to Heroku.
 	* Ensure that your project has the proper naming scheme (`cs4241-a3-yourGitHubUsername`) so we can find it.
