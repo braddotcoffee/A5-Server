@@ -27,10 +27,10 @@ Do the following to complete this assignment:
 	* Hint: Your URL would look something like www.______.com/index?search=jaws
 3. Deploy your project to Heroku.
 	* Ensure that your project has the proper naming scheme (`cs4241-a3-yourGitHubUsername`) so we can find it.
-4. The project will be graded against the following rubric:
-	* 80%: Fulfilling requirements
-	* 10%: Good theming and layout
-	* 10%: Technical Achievement: Have fun here! Check out advanced resources for some ideas. Don't forget to include an explanation of your achievedment on your page.
+4. The project will be graded against the following rubric (120 total):
+	* 100: Fulfilling the requirements above
+	* 10: Good theming and layout
+	* 10: Technical Achievement: Have fun here! Check out advanced resources for some ideas. Don't forget to include an explanation of your achievedment on your page.
 
 
 Resources
