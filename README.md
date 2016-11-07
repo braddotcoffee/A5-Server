@@ -24,13 +24,13 @@ Do the following to complete this assignment:
 		* Jaws
 		* Jaws 2
 		* Jaws 3
-	* Hint: Your URL would look something like www.______.com/index?search=jaws
+	* Hint: Your URL would look something like www.______.com/search?search=jaws
 3. Deploy your project to Heroku.
 	* Ensure that your project has the proper naming scheme (`cs4241-a3-yourGitHubUsername`) so we can find it.
 4. The project will be graded against the following rubric (120 total):
 	* 100: Fulfilling the requirements above
 	* 10: Good theming and layout
-	* 10: Technical Achievement: Have fun here! Check out advanced resources for some ideas. Don't forget to include an explanation of your achievedment on your page.
+	* 10: Technical Achievement: Have fun here! Check out advanced resources for some ideas. Don't forget to include an explanation of your achievement on your page.
 
 
 Resources
@@ -38,7 +38,7 @@ Resources
 
 A good resource for general HTML/CSS/Javascript is the [Mozilla Developer Network](https://developer.mozilla.org/en-US/). This contains all the references you need for front-end design.
 
-A good resource for font would the the [Google Font](https://fonts.google.com/) project, with hundreds of different fonts to choose from so that you don't have to stick with Comic Sans. Or Impact.
+A good resource for font is the [Google Fonts](https://fonts.google.com/) project, with hundreds of different fonts to choose from so that you don't have to stick with Comic Sans. Or Impact.
 
 If you want icons, look into [Font Awesome](http://fontawesome.io/).
 

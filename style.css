@@ -1,3 +1,4 @@
+/* We added some default styles. Feel free to change them */
 body
 {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -11,15 +12,4 @@ body > article
 h1
 {
   margin: 10px 0;
-}
-
-.header-note
-{
-  margin: 5px 0 0 0;
-}
-
-.copyright
-{
-  font-size: 0.8em;
-  margin: 3px 0 0 0;
 }
