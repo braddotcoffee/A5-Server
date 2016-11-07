@@ -7,7 +7,7 @@ Assignment details
 
 Do the following to complete this assignment:
 
-1. Clone the [starting project code](https://github.com/cs4241-16b/A3-Filter). **DO NOT FORK THE REPO and DO NOT MAKE IT PUBLIC.** This repo contains:
+1. Clone the [starting project code](https://github.com/cs4241-16b/A3-Filters). **DO NOT FORK THE REPO and DO NOT MAKE IT PUBLIC.** This repo contains:
     * the server code, `server.js`
     * the `Procfile` that you need for Heroku deployment
     * A starting `index.html` file that you will edit as described below
