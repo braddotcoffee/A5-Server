@@ -96,7 +96,7 @@ function handleSearch(res, uri) {
 			var info;
 			if(result) {
 				info = "<li class='results'>" + result + "</li>";
-				imdb.getReq({name:'Frozen'}).then(function(err, data) {
+				imdb.getReq({name:'Frozen'}).then(function(data) {
 					console.log(data);
 					info = info + //"<li class='info'>Year: " + data._year_data + "</li>" +
 						"<li class='info'>Rating: " + data.rated + "</li>" + 
