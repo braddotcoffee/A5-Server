@@ -110,6 +110,10 @@ function handleSearch(res, uri) {
 
 function reqCallback(error, data)
 {
+	if(error)
+	{
+		callbackSync(this.res, this.contentType);
+	}
 	html = html + "<li class='results'>" + this.result + "</li>";
 	html = html + "<li class='info'>Year: " + data._year_data + "</li>" +
 		"<li class='info'>Rating: " + data.rated + "</li>" + 
