@@ -44,15 +44,16 @@ var info;
 
 imdb.getReq({ name: 'The Toxic Avenger' }, function(err, things) {
     info = things;
-	console.log(things);
 });
-imdb.getReq({ name: 'Frozen' }).then(function(data) { console.log(data) });
 
 
 // subroutines
+var html = '';
+var count = 0;
 
 // You'll be modifying this function
 function handleSearch(res, uri) {
+	html = '';
 	var contentType = 'text/html'
 	res.writeHead(200, {'Content-type': contentType})
 
@@ -79,7 +80,6 @@ function handleSearch(res, uri) {
 
 		// Write HTML Results Page //
 		var contentType = 'text/html';
-		var html = '';
 
 		html = html + "<head>";
 		// Insert CSS Sheet Here //
@@ -91,23 +91,46 @@ function handleSearch(res, uri) {
 		html = html + "<h1> RESULTS </h1>";
 		html = html + "<div class='result-div'>";
 		html = html + "<ul class='col'>";
-
-		html = html + results.map(function(result){
-			var info;
+		
+		count = results.length;
+		console.log(count);
+		console.log(results);
+		results.map(function (result){
+			
 			if(result) {
-				info = "<li class='results'>" + result + "</li>";
-				imdb.getReq({name:'Frozen'}).then(function(data) {
-					console.log(data);
-					info = info + //"<li class='info'>Year: " + data._year_data + "</li>" +
-						"<li class='info'>Rating: " + data.rated + "</li>" + 
-						"<li class='info'>Runtime: " + data.runtime + "</li>";
-					console.log(info);
-					return info;
-				});
+				imdb.getReq({name:result}, reqCallback.bind({res: res, contentType: contentType, result: result}));
 			}
-			console.log(info);
-			return info;
-		}).join(" ");
+			else
+			{
+				count--;
+			}
+		});
+	}
+}
+
+function reqCallback(error, data)
+{
+	html = html + "<li class='results'>" + this.result + "</li>";
+	html = html + "<li class='info'>Year: " + data._year_data + "</li>" +
+		"<li class='info'>Rating: " + data.rated + "</li>" + 
+		"<li class='info'>Runtime: " + data.runtime + "</li>";
+	console.log(this.result);
+	callbackSync(this.res, this.contentType);
+}
+
+function callbackSync(res,contentType)
+{
+	count--;
+	console.log(count);
+	if(count <= 0)
+	{
+		completeHTML(res, contentType);
+	}
+	
+}
+		
+
+function completeHTML(res, contentType){
 		html = html + "</ul>";
 		html = html + "</div>";
 
@@ -119,9 +142,6 @@ function handleSearch(res, uri) {
 
 		res.writeHead(200, {'Content-type': contentType})
 		res.end(html, 'utf-8')
-	} else {
-		res.end('no query provided')
-	}
 }
 
 // Note: consider this your "index.html" for this assignment
@@ -163,6 +183,7 @@ function sendIndex(res) {
 
 	res.writeHead(200, {'Content-type': contentType})
 	res.end(html, 'utf-8')
+	html = "";
 }
 
 function sendFile(res, filename, contentType) {

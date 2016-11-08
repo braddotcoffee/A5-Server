@@ -147,3 +147,7 @@ button {
     display: table;
     padding: 0;
 }
+.info {
+	margin-left: 1.5em;
+	list-style-type: square;
+}
