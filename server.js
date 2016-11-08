@@ -64,7 +64,7 @@ function handleSearch(res, uri) {
 		var results = [];
 		query.forEach(function(q){
 			results.push(movies.map(function(movie) {
-				if(movie.toLowerCase().indexOf(q.toLowerCase()) > -1 && !results.includes(movie))
+				if(movie.toLowerCase().indexOf(q.toLowerCase()) > -1)
 				{
 					return movie;
 				}
