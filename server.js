@@ -42,14 +42,12 @@ server.listen(process.env.PORT || port)
 console.log('listening on 8080')
 var info;
 
-imdb.getReq({ name: 'The Toxic Avenger' }, function(err, things) {
-    info = things;
-});
 
 
 // subroutines
 var html = '';
 var count = 0;
+
 
 // You'll be modifying this function
 function handleSearch(res, uri) {
@@ -93,8 +91,11 @@ function handleSearch(res, uri) {
 		html = html + "<ul class='col'>";
 		
 		count = results.length;
-		console.log(count);
-		console.log(results);
+		if (count <= 1)
+		{
+			html = html + "<li class='results'>No Matches Found</li>";
+			callbackSync(res, contentType);
+		}
 		results.map(function (result){
 			
 			if(result) {
@@ -102,7 +103,7 @@ function handleSearch(res, uri) {
 			}
 			else
 			{
-				count--;
+				callbackSync(res, contentType);
 			}
 		});
 	}
@@ -112,14 +113,21 @@ function reqCallback(error, data)
 {
 	if(error)
 	{
+		console.error("DATA NOT FOUND",this.result);
+		html = html + "<li class=results'>" + this.result + "</li>";
+		html = html + "<li class='info'>No Information Found</li>";
 		callbackSync(this.res, this.contentType);
 	}
-	html = html + "<li class='results'>" + this.result + "</li>";
-	html = html + "<li class='info'>Year: " + data._year_data + "</li>" +
-		"<li class='info'>Rating: " + data.rated + "</li>" + 
-		"<li class='info'>Runtime: " + data.runtime + "</li>";
-	console.log(this.result);
-	callbackSync(this.res, this.contentType);
+	else
+	{
+		html = html + "<li class='results'>" + this.result + "</li>";
+		html = html + 
+			"<li class='info'>Director: " + data.director + "</li>" + 
+			"<li class='info'>Year: " + data._year_data + "</li>" +
+			"<li class='info'>Rating: " + data.rated + "</li>" + 
+			"<li class='info'>Runtime: " + data.runtime + "</li>";
+		callbackSync(this.res, this.contentType);
+	}
 }
 
 function callbackSync(res,contentType)
@@ -130,22 +138,22 @@ function callbackSync(res,contentType)
 	{
 		completeHTML(res, contentType);
 	}
-	
+
 }
-		
+
 
 function completeHTML(res, contentType){
-		html = html + "</ul>";
-		html = html + "</div>";
+	html = html + "</ul>";
+	html = html + "</div>";
 
-		html = html + "<a href='/' class='links'>Search Again</a>";
+	html = html + "<a href='/' class='links'>Search Again</a>";
 
-		html = html + "</body>";
-		html = html + "</html>";
+	html = html + "</body>";
+	html = html + "</html>";
 
 
-		res.writeHead(200, {'Content-type': contentType})
-		res.end(html, 'utf-8')
+	res.writeHead(200, {'Content-type': contentType})
+	res.end(html, 'utf-8')
 }
 
 // Note: consider this your "index.html" for this assignment
