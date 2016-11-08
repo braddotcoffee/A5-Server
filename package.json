@@ -8,5 +8,6 @@
     "start": "node server.js"
   },
   "dependencies": {
+    "imdb-api": "^2.2.0"
   }
 }

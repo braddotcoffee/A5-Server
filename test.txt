@@ -1,0 +1,60 @@
+10:44:30 PM web.1 |  > cs4241-a3-YOURNAME@0.0.1 start /home/bwbonanno/Documents/Webware/A3/A3-Filters
+10:44:30 PM web.1 |  > node server.js
+10:44:31 PM web.1 |  listening on 8080
+10:44:31 PM web.1 |  Movie {
+10:44:31 PM web.1 |    title: 'The Toxic Avenger',
+10:44:31 PM web.1 |    _year_data: '1984',
+10:44:31 PM web.1 |    year: 1984,
+10:44:31 PM web.1 |    rated: 'R',
+10:44:31 PM web.1 |    released: 1986-04-11T05:00:00.000Z,
+10:44:31 PM web.1 |    runtime: '82 min',
+10:44:31 PM web.1 |    genres: 'Action, Comedy, Horror',
+10:44:31 PM web.1 |    director: 'Michael Herz, Lloyd Kaufman',
+10:44:31 PM web.1 |    writer: 'Lloyd Kaufman (story), Joe Ritter (screenplay), Lloyd Kaufman (additional material), Gay Partington Terry (additional material), Stuart Strutin (additional material)',
+10:44:31 PM web.1 |    actors: 'Andree Maranda, Mitch Cohen, Jennifer Babtist, Cindy Manion',
+10:44:31 PM web.1 |    plot: 'This is the story of Melvin, the Tromaville Health Club mop boy, who inadvertently and naively trusts the hedonistic, contemptuous and vain health club members, to the point of accidentally ending up in a vat of toxic waste. The devastating results then have a transmogrification effect, his alter ego is released, and the Toxic Avenger is born, to deadly and comical results. The local mop boy is now the local Superhero, the saviour of corruption, thuggish bullies and indifference. Troma 
+10:44:31 PM web.1 |  >  classic with good make-up effects and stunts, a pleasant surprise indeed.',
+10:44:31 PM web.1 |    languages: 'English',
+10:44:31 PM web.1 |    country: 'USA',
+10:44:31 PM web.1 |    awards: '1 nomination.',
+10:44:31 PM web.1 |    poster: 'https://images-na.ssl-images-amazon.com/images/M/MV5BNzViNmQ5MTYtMmI4Yy00N2Y2LTg4NWUtYWU3MThkMTVjNjk3XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg',
+10:44:31 PM web.1 |    metascore: 'N/A',
+10:44:31 PM web.1 |    rating: '6.2',
+10:44:31 PM web.1 |    votes: '19,590',
+10:44:31 PM web.1 |    imdbid: 'tt0090190',
+10:44:31 PM web.1 |    type: 'movie',
+10:44:31 PM web.1 |    response: 'True',
+10:44:31 PM web.1 |    series: false,
+10:44:31 PM web.1 |    imdburl: 'https://www.imdb.com/title/tt0090190' }
+10:44:33 PM web.1 |  undefined
+10:44:33 PM web.1 |  undefined
+10:44:33 PM web.1 |  undefined
+10:44:34 PM web.1 |  undefined
+10:44:34 PM web.1 |  Unhandled rejection TypeError: Cannot read property 'rated' of undefined
+10:44:34 PM web.1 |      at /home/bwbonanno/Documents/Webware/A3/A3-Filters/server.js:102:41
+10:44:34 PM web.1 |      at tryCatcher (/home/bwbonanno/Documents/Webware/A3/A3-Filters/node_modules/bluebird/js/release/util.js:16:23)
+10:44:34 PM web.1 |      at Promise._settlePromiseFromHandler (/home/bwbonanno/Documents/Webware/A3/A3-Filters/node_modules/bluebird/js/release/promise.js:510:31)
+10:44:34 PM web.1 |      at Promise._settlePromise (/home/bwbonanno/Documents/Webware/A3/A3-Filters/node_modules/bluebird/js/release/promise.js:567:18)
+10:44:34 PM web.1 |      at Promise._settlePromise0 (/home/bwbonanno/Documents/Webware/A3/A3-Filters/node_modules/bluebird/js/release/promise.js:612:10)
+10:44:34 PM web.1 |      at Promise._settlePromises (/home/bwbonanno/Documents/Webware/A3/A3-Filters/node_modules/bluebird/js/release/promise.js:691:18)
+10:44:34 PM web.1 |      at Async._drainQueue (/home/bwbonanno/Documents/Webware/A3/A3-Filters/node_modules/bluebird/js/release/async.js:138:16)
+10:44:34 PM web.1 |      at Async._drainQueues (/home/bwbonanno/Documents/Webware/A3/A3-Filters/node_modules/bluebird/js/release/async.js:148:10)
+10:44:34 PM web.1 |      at Immediate.Async.drainQueues (/home/bwbonanno/Documents/Webware/A3/A3-Filters/node_modules/bluebird/js/release/async.js:17:14)
+10:44:34 PM web.1 |      at runCallback (timers.js:637:20)
+10:44:34 PM web.1 |      at tryOnImmediate (timers.js:610:5)
+10:44:34 PM web.1 |      at processImmediate [as _immediateCallback] (timers.js:582:5)
+10:44:34 PM web.1 |  undefined
+10:44:34 PM web.1 |  Unhandled rejection TypeError: Cannot read property 'rated' of undefined
+10:44:34 PM web.1 |      at /home/bwbonanno/Documents/Webware/A3/A3-Filters/server.js:102:41
+10:44:34 PM web.1 |      at tryCatcher (/home/bwbonanno/Documents/Webware/A3/A3-Filters/node_modules/bluebird/js/release/util.js:16:23)
+10:44:34 PM web.1 |      at Promise._settlePromiseFromHandler (/home/bwbonanno/Documents/Webware/A3/A3-Filters/node_modules/bluebird/js/release/promise.js:510:31)
+10:44:34 PM web.1 |      at Promise._settlePromise (/home/bwbonanno/Documents/Webware/A3/A3-Filters/node_modules/bluebird/js/release/promise.js:567:18)
+10:44:34 PM web.1 |      at Promise._settlePromise0 (/home/bwbonanno/Documents/Webware/A3/A3-Filters/node_modules/bluebird/js/release/promise.js:612:10)
+10:44:34 PM web.1 |      at Promise._settlePromises (/home/bwbonanno/Documents/Webware/A3/A3-Filters/node_modules/bluebird/js/release/promise.js:691:18)
+10:44:34 PM web.1 |      at Async._drainQueue (/home/bwbonanno/Documents/Webware/A3/A3-Filters/node_modules/bluebird/js/release/async.js:138:16)
+10:44:34 PM web.1 |      at Async._drainQueues (/home/bwbonanno/Documents/Webware/A3/A3-Filters/node_modules/bluebird/js/release/async.js:148:10)
+10:44:34 PM web.1 |      at Immediate.Async.drainQueues (/home/bwbonanno/Documents/Webware/A3/A3-Filters/node_modules/bluebird/js/release/async.js:17:14)
+10:44:34 PM web.1 |      at runCallback (timers.js:637:20)
+10:44:34 PM web.1 |      at tryOnImmediate (timers.js:610:5)
+10:44:34 PM web.1 |      at processImmediate [as _immediateCallback] (timers.js:582:5)
+[DONE] Killing all processes with signal  SIGINT

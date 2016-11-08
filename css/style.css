@@ -1,0 +1,149 @@
+body{
+    background: rgb(255,246,246);
+    font-size: 30px;
+    color: rgb(64,61,61);
+    font-family: "Open Sans Condensed", sans-serif;
+    margin: 0px;
+}
+#header-text, .links, table{
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.header{
+    background-color: rgb(191,184,184);
+    /*background-image: url("http://www.clipartsfree.net/vector/large/14260-berlin-skyline-vector.png");*/
+    /*background-color: #BFBFBF;*/
+    padding-top: 3px;
+    padding-bottom: 30px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgb(64,61,61);
+}
+
+#header-text {
+    background-position: center center;
+    background-color: rgb(229,221,221);
+    background-size: cover;
+    /* Fonts Tweaks */ 
+    font-size: 42px;
+    font-family: 'Trirong', serif;
+
+    /* Alignment */
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 600px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+
+
+    /* Color */
+    color: rgb(64,61,61);
+    border: 1px solid rgb(64,61,61);
+}
+
+h1 {
+    background-color: rgb(191,184,184);
+}
+
+h2 {
+    font-weight: 100;
+    font-size: 32px;
+    letter-spacing: 0.5em;
+    font-family: 'Trirong', serif;
+    padding-top: 0px;
+    margin-top: 0px;
+    border: 1px solid #403D36;
+    background: rgb(191,184,184);
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    padding-left: 1em;
+}
+.search {
+    
+    /* Alignment */
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 30 auto;
+    text-align: center;
+
+}
+.results {
+    text-align: left;
+}
+p {
+   /* color: #262626;*/
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-top: 0;
+}
+
+table {
+    border: 1px solid #7F7F7F;
+    border-collapse: collapse;
+    
+}
+
+td {
+    border: 1px solid #7F7F7F;
+    border-collapse: collapse;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+#tbl {
+    padding-bottom: 2em;
+}
+
+.num{
+    letter-spacing: 0.1em;
+}
+
+.intense {
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+.links {
+    display: block;
+    text-align: center;
+}
+
+.col {
+    padding-left: 2em;
+    padding-right: 2em;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -moz-margin-before: 0;
+    -moz-margin-after: 0;
+    -webkit-columns: 4 150;
+    -moz-columns: 4 150px;
+    columns: 4 150px;
+    -webkit-column-gap: 4em;
+    -moz-column-gap: 4em;
+    column-gap: 4em;
+}
+
+input {
+    height: 2em;
+    background: rgb(191,184,184);
+    border: 1px solid #403D36;
+}
+
+button {
+    margin-left: 5px;
+    height: 2em;
+    border: 1px solid #403D36;
+}
+
+.result-div ul{
+    margin: 0 auto;
+    display: table;
+    padding: 0;
+}
