@@ -7,3 +7,7 @@ matching term was found. In order to do this, I had to make the IMDB requests sy
 otherwise there was no way of ensuring that the HTML would be written in the correct
 order. In order to make this happen, I utilized a library called deasync that would
 allow me to stall node.js until one function completed. 
+
+Additionally, I have set up the search so that if the movie is not found in my small
+"database" listed, that it will search IMDB for the query. Additionally, if the query
+is only partially found, it will search IMDB as well.
