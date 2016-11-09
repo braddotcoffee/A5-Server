@@ -165,7 +165,7 @@ function handleSearch(res, uri) {
 		results = firstSort(index, results, -1);
 		results = secondSort(hm, results, 1);
 		
-
+		count = results.length;
 
 
 		// Write HTML Results Page //
@@ -179,10 +179,13 @@ function handleSearch(res, uri) {
 
 		html = html + "<body>";
 		html = html + "<h1> RESULTS </h1>";
+		if (count >= 5)
+		{
+			html = html + "<a href='/' class='links'>Search Again</a>";
+		}
 		html = html + "<div class='result-div'>";
 		html = html + "<ul class='col'>";
 
-		count = results.length;
 		if(hm.get(results[0]) < query.length)
 		{
 			imdbQuery(query_copy);
