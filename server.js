@@ -180,6 +180,7 @@ function handleSearch(res, uri) {
 
 		html = html + "<head>";
 		// Insert CSS Sheet Here //
+		html = html + "<title>Results</title>";
 		html = html + "<link rel='stylesheet' type='text/css' href='/css/style.css'/>";
 
 		html = html + "</head>";
@@ -278,6 +279,7 @@ function sendIndex(res) {
 	html = html + '<head>'
 	// You could add a CSS and/or js call here...
 	html = html + "<link rel='stylesheet' type='text/css' href='/css/style.css'/>";
+	html = html + "<title>Movie Search!</title>";
 	html = html + '</head>'
 
 	html = html + '<body>'
