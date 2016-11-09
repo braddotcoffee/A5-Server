@@ -151,3 +151,8 @@ button {
 	margin-left: 1.5em;
 	list-style-type: square;
 }
+
+a {
+	color:inherit;
+	text-decoration: none;
+}

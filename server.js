@@ -3,12 +3,14 @@ var http = require('http')
 	, qs   = require("querystring")
 	, url  = require('url')
 	, imdb = require('imdb-api')
+	, HashMap = require('hashmap')
+	, deasync = require('deasync')
 	, port = 8080
 
 // Add more movies! (For a technical challenge, use a file, or even an API!)
 var movies = ['Jaws', 'Jaws 2', 'Jaws 3', 'Doctor Strange', "Star Wars", "The Jungle Book", "Batman vs. Superman", "The Hunger Games",
 	"The Godfather", "Citizen Kane", "The Great Gatsby", "Breakfast Club", "Beetlejuice", "Lion King", "Hitchiker's Guide to the Galaxy", "Mulan", "Aladdin", "Tarzan", "Tangled",
-	"Frozen", "Lord of the Rings", "Harry Potter", "Star Trek", "Fight Club", "A Beautiful Mind", "Rain Man", "The Departed", "The Bee Movie", "The Big Lebowski"]
+	"Frozen", "Lord of the Rings", "Harry Potter", "Star Trek", "Fight Club", "A Beautiful Mind", "Rain Man", "The Departed", "The Bee Movie", "The Big Lebowski", "Guardians of the Galaxy", "Snakes on a Plane", "Pulp Fiction", "The Truman Show", "A Christmas Carol", "Sharknado", "Little Miss Sunshine", "Legends of the Fall", "The Fountain", "500 Days of Summer", "Iron Man"]
 movies = movies.sort();
 
 var server = http.createServer (function (req, res) {
@@ -41,6 +43,8 @@ var server = http.createServer (function (req, res) {
 server.listen(process.env.PORT || port)
 console.log('listening on 8080')
 var info;
+var hm = new HashMap();
+var index = new HashMap();
 
 
 
@@ -48,10 +52,50 @@ var info;
 var html = '';
 var count = 0;
 
+function sort(results_sort, results, delta) {
+	// Sort Array Based on Values //
+	results_sort.sort(function(first, second) {
+		if(delta == 1)
+		{
+			return second[1] - first[1];
+		}
+		else
+		{
+			return first[1] - second[1];
+		}
+	});
+
+	results = results_sort.map(function(subarray) {
+		return subarray[0];
+	});
+	console.log(results, "INSIDE SORT");	
+	return results;	
+}
+
+function firstSort(hashmap, results, delta)
+{
+	// Make Array out of Dictionary //
+	var results_sort = [];
+	hashmap.forEach(function(value, key){
+		results_sort.push([key, value]);
+	});
+	return sort(results_sort, results, delta);	
+}
+
+function secondSort(hashmap, results, delta)
+{
+	var results_sort = [];
+	results.forEach(function(result) {
+		results_sort.push([result, hashmap.get(result)]);
+	});
+	return sort(results_sort, results, delta);
+}
 
 // You'll be modifying this function
 function handleSearch(res, uri) {
 	html = '';
+	hm = new HashMap();
+	index = new HashMap();
 	var contentType = 'text/html'
 	res.writeHead(200, {'Content-type': contentType})
 
@@ -63,16 +107,36 @@ function handleSearch(res, uri) {
 		var results = [];
 		query.forEach(function(q){
 			results.push(movies.map(function(movie) {
-				if(movie.toLowerCase().indexOf(q.toLowerCase()) > -1)
+				var i = movie.toLowerCase().indexOf(q.toLowerCase());
+				if(i> -1)
 				{
+					if(!index.has(movie))
+					{
+						index.set(movie, i); 						
+					}
 					return movie;
 				}
 			}));
 		});
 		results = results.toString().split(",");
-		results = results.filter(function(elem, index, self) {
-			return index == self.indexOf(elem);
-		});
+		console.log(index);
+
+
+		results.forEach(function(result)
+			{
+				console.log(result);
+				if(hm.has(result))
+				{
+					hm.set(result, hm.get(result)+1);
+				}	
+				else
+				{
+					hm.set(result, 1);
+				}
+			});
+		results = firstSort(index, results, -1);
+		results = secondSort(hm, results, 1);
+		console.log(results, "OUTSIDE SORT");
 
 
 
@@ -89,23 +153,41 @@ function handleSearch(res, uri) {
 		html = html + "<h1> RESULTS </h1>";
 		html = html + "<div class='result-div'>";
 		html = html + "<ul class='col'>";
-		
+
 		count = results.length;
-		if (count <= 1)
+		if (count <= 0)
 		{
 			html = html + "<li class='results'>No Matches Found</li>";
-			callbackSync(res, contentType);
 		}
 		results.map(function (result){
-			
+			var info;
+
 			if(result) {
-				imdb.getReq({name:result}, reqCallback.bind({res: res, contentType: contentType, result: result}));
-			}
-			else
-			{
-				callbackSync(res, contentType);
-			}
-		});
+				imdb.getReq({name:result},function(error, data) {
+					if(error)
+					{
+						console.error("DATA NOT FOUND",result);
+						info = "<li class=results'>" + result + "</li>";
+						info = info + "<li class='info'>No Information Found</li>";
+					}
+					else
+					{
+						info = "<li class='results'>" + result + "</li>";
+						info = info + 
+							"<li class='info'>Director: " + data.director + "</li>" + 
+							"<li class='info'>Year: " + data._year_data + "</li>" +
+							"<li class='info'>Rating: " + data.rated + "</li>" + 
+							"<li class='info'>Runtime: " + data.runtime + "</li>";
+					}
+
+				})
+				while(info === undefined){
+					deasync.runLoopOnce();			
+				}
+				html = html + info;
+			};
+		})
+		completeHTML(res, contentType);
 	}
 }
 
@@ -187,7 +269,7 @@ function sendIndex(res) {
 	// and read up on the functions it uses.
 	//
 	// For a challenge, try rewriting this function to take the filtered movies list as a parameter, to avoid changing to a page that lists only movies.
-	html = html + movies.map(function(d) { return '<li>'+d+'</li>' }).join(' ')
+	html = html + movies.map(function(d) { return '<li class="searchable"><a href="/search?search='+d+'">'+d+'</a></li>' }).join(' ')
 	html = html + '</ul>'
 
 	html = html + '</body>'
