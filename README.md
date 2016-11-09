@@ -23,6 +23,8 @@ otherwise there was no way of ensuring that the HTML would be written in the cor
  Additionally, I have set up the search so that if the movie is not found in my small
  "database" listed, that it will search IMDB for the query. Additionally, if the query
  is only partially found, it will search IMDB as well.</p>
+
+ <a href="/" class="links">Search Again</a>
  </body>
 
 </html>
