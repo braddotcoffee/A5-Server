@@ -12,6 +12,9 @@ var movies = ['Jaws', 'Jaws 2', 'Jaws 3', 'Doctor Strange', "Star Wars", "The Ju
 	"The Godfather", "Citizen Kane", "The Great Gatsby", "Breakfast Club", "Beetlejuice", "Lion King", "Hitchiker's Guide to the Galaxy", "Mulan", "Aladdin", "Tarzan", "Tangled",
 	"Frozen", "Lord of the Rings", "Harry Potter", "Star Trek", "Fight Club", "A Beautiful Mind", "Rain Man", "The Departed", "The Bee Movie", "The Big Lebowski", "Guardians of the Galaxy", "Snakes on a Plane", "Pulp Fiction", "The Truman Show", "A Christmas Carol", "Sharknado", "Little Miss Sunshine", "Legends of the Fall", "The Fountain", "500 Days of Summer", "Iron Man"]
 movies = movies.sort();
+movies = movies.map(function(movie){
+	return movie = movie + " ";	
+});
 
 var server = http.createServer (function (req, res) {
 	var uri = url.parse(req.url)
@@ -59,11 +62,11 @@ function sort(results_sort, results, delta) {
 	results_sort.sort(function(first, second) {
 		if(delta == 1)
 		{
-			return second[1] - first[1];
+			return (second[1] - first[1]) > 0;
 		}
 		else
 		{
-			return first[1] - second[1];
+			return (first[1] - second[1]) > 0;
 		}
 	});
 
@@ -133,12 +136,15 @@ function handleSearch(res, uri) {
 		var query_copy = query.search;
 		console.log(query_copy);
 		query = query.search.split(" ");
+		query = query.map(function(q){
+				return q = q + " ";
+		});
 
 		var results = [];
 		query.forEach(function(q){
 			results.push(movies.map(function(movie) {
 				var i = movie.toLowerCase().indexOf(q.toLowerCase());
-				if(i> -1)
+				if(i > -1)
 				{
 					if(!index.has(movie))
 					{
