@@ -301,6 +301,7 @@ function sendIndex(res) {
 	// For a challenge, try rewriting this function to take the filtered movies list as a parameter, to avoid changing to a page that lists only movies.
 	html = html + movies.map(function(d) { return '<li class="searchable"><a href="/search?search='+d+'">'+d+'</a></li>' }).join(' ')
 	html = html + '</ul>'
+	html = html + "<a href='/README.md' class='links'>README</a>";
 
 	html = html + '</body>'
 	html = html + '</html>'
