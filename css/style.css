@@ -45,6 +45,7 @@ body{
 
 h1 {
     background-color: rgb(191,184,184);
+	margin-top: 0px;
 }
 
 h2 {
@@ -156,3 +157,4 @@ a {
 	color:inherit;
 	text-decoration: none;
 }
+

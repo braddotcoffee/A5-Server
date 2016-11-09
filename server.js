@@ -39,6 +39,7 @@ var server = http.createServer (function (req, res) {
 			break
 		case '/README.md':
 			sendFile(res, 'README.md', 'text/html');
+			break;
 		default:
 			res.end('404 not found')
 	}
@@ -62,11 +63,11 @@ function sort(results_sort, results, delta) {
 	results_sort.sort(function(first, second) {
 		if(delta == 1)
 		{
-			return (second[1] - first[1]) > 0;
+			return second[1] - first[1];
 		}
 		else
 		{
-			return (first[1] - second[1]) > 0;
+			return first[1] - second[1];
 		}
 	});
 
@@ -194,7 +195,7 @@ function handleSearch(res, uri) {
 
 		if(hm.get(results[0]) < query.length)
 		{
-			imdbQuery(query_copy);
+			//imdbQuery(query_copy);
 		}
 		if (count <= 0)
 		{
