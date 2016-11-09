@@ -34,6 +34,8 @@ var server = http.createServer (function (req, res) {
 		case '/js/scripts.js':
 			sendFile(res, 'scripts.js', 'text/javascript')
 			break
+		case '/README.md':
+			sendFile(res, 'README.md', 'text/html');
 		default:
 			res.end('404 not found')
 	}
@@ -68,7 +70,6 @@ function sort(results_sort, results, delta) {
 	results = results_sort.map(function(subarray) {
 		return subarray[0];
 	});
-	console.log(results, "INSIDE SORT");	
 	return results;	
 }
 
@@ -90,10 +91,37 @@ function secondSort(hashmap, results, delta)
 	});
 	return sort(results_sort, results, delta);
 }
+function imdbQuery(query_copy)
+{
+	imdb.getReq({name:query_copy}, function(error, data) {
+		if(error)
+		{
+			console.error("DATA NOT FOUND",query_copy);
+			info = "<li class=results'>" + query_copy+ "</li>";
+			info = info + "<li class='info'>No Information Found</li>";
+		}
+		else
+		{
+			info = "<li class='results'>" + query_copy + "</li>";
+			info = info + 
+				"<li class='info'>Director: " + data.director + "</li>" + 
+				"<li class='info'>Year: " + data._year_data + "</li>" +
+				"<li class='info'>Rating: " + data.rated + "</li>" + 
+				"<li class='info'>Runtime: " + data.runtime + "</li>";
+		}
+
+	});
+	while(info === undefined){
+		deasync.runLoopOnce();			
+	}
+	html = html + info;
+
+}
 
 // You'll be modifying this function
 function handleSearch(res, uri) {
 	html = '';
+	info = undefined;
 	hm = new HashMap();
 	index = new HashMap();
 	var contentType = 'text/html'
@@ -102,6 +130,8 @@ function handleSearch(res, uri) {
 	if(uri.query) {
 		// PROCESS THIS QUERY TO FILTER MOVIES ARRAY BASED ON THE USER INPUT
 		var query = qs.parse(uri.query);
+		var query_copy = query.search;
+		console.log(query_copy);
 		query = query.search.split(" ");
 
 		var results = [];
@@ -119,12 +149,10 @@ function handleSearch(res, uri) {
 			}));
 		});
 		results = results.toString().split(",");
-		console.log(index);
 
 
 		results.forEach(function(result)
 			{
-				console.log(result);
 				if(hm.has(result))
 				{
 					hm.set(result, hm.get(result)+1);
@@ -136,7 +164,7 @@ function handleSearch(res, uri) {
 			});
 		results = firstSort(index, results, -1);
 		results = secondSort(hm, results, 1);
-		console.log(results, "OUTSIDE SORT");
+		
 
 
 
@@ -155,9 +183,14 @@ function handleSearch(res, uri) {
 		html = html + "<ul class='col'>";
 
 		count = results.length;
+		if(hm.get(results[0]) < query.length)
+		{
+			imdbQuery(query_copy);
+		}
 		if (count <= 0)
 		{
-			html = html + "<li class='results'>No Matches Found</li>";
+			imdbQuery(query_copy);
+			completeHTML(res,contentType);
 		}
 		results.map(function (result){
 			var info;
@@ -166,7 +199,6 @@ function handleSearch(res, uri) {
 				imdb.getReq({name:result},function(error, data) {
 					if(error)
 					{
-						console.error("DATA NOT FOUND",result);
 						info = "<li class=results'>" + result + "</li>";
 						info = info + "<li class='info'>No Information Found</li>";
 					}
@@ -211,18 +243,6 @@ function reqCallback(error, data)
 		callbackSync(this.res, this.contentType);
 	}
 }
-
-function callbackSync(res,contentType)
-{
-	count--;
-	console.log(count);
-	if(count <= 0)
-	{
-		completeHTML(res, contentType);
-	}
-
-}
-
 
 function completeHTML(res, contentType){
 	html = html + "</ul>";
@@ -281,7 +301,7 @@ function sendIndex(res) {
 }
 
 function sendFile(res, filename, contentType) {
-	contentType = contentType || 'text/html'
+	contentType = contentType || 'text/html';
 
 	fs.readFile(filename, function(error, content) {
 		res.writeHead(200, {'Content-type': contentType})

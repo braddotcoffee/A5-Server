@@ -1,118 +1,30 @@
-10:01:42 PM web.1 |  > cs4241-a3-YOURNAME@0.0.1 start /home/bwbonanno/Documents/Webware/A3/A3-Filters
-10:01:42 PM web.1 |  > node server.js
-10:01:42 PM web.1 |  listening on 8080
-10:01:44 PM web.1 |  HashMap {
-10:01:44 PM web.1 |    _data: 
-10:01:44 PM web.1 |     { '♠Hitchiker\'s Guide to the Galaxy': [ 'Hitchiker\'s Guide to the Galaxy', 21 ],
-10:01:44 PM web.1 |       '♠Lord of the Rings': [ 'Lord of the Rings', 8 ],
-10:01:44 PM web.1 |       '♠The Bee Movie': [ 'The Bee Movie', 0 ],
-10:01:44 PM web.1 |       '♠The Big Lebowski': [ 'The Big Lebowski', 0 ],
-10:01:44 PM web.1 |       '♠The Departed': [ 'The Departed', 0 ],
-10:01:44 PM web.1 |       '♠The Godfather': [ 'The Godfather', 0 ],
-10:01:44 PM web.1 |       '♠The Great Gatsby': [ 'The Great Gatsby', 0 ],
-10:01:44 PM web.1 |       '♠The Hunger Games': [ 'The Hunger Games', 0 ],
-10:01:44 PM web.1 |       '♠The Jungle Book': [ 'The Jungle Book', 0 ] },
-10:01:44 PM web.1 |    _count: 9 }
-10:01:44 PM web.1 |  Hitchiker's Guide to the Galaxy
-10:01:44 PM web.1 |  Lord of the Rings
-10:01:44 PM web.1 |  The Bee Movie
-10:01:44 PM web.1 |  The Big Lebowski
-10:01:44 PM web.1 |  The Departed
-10:01:44 PM web.1 |  The Godfather
-10:01:44 PM web.1 |  The Great Gatsby
-10:01:44 PM web.1 |  The Hunger Games
-10:01:44 PM web.1 |  The Jungle Book
-10:01:44 PM web.1 |  The Godfather
-10:01:44 PM web.1 |  [ '',
-10:01:44 PM web.1 |    'The Godfather',
-10:01:44 PM web.1 |    'Hitchiker\'s Guide to the Galaxy',
-10:01:44 PM web.1 |    'Lord of the Rings',
-10:01:44 PM web.1 |    'The Bee Movie',
-10:01:44 PM web.1 |    'The Big Lebowski',
-10:01:44 PM web.1 |    'The Departed',
-10:01:44 PM web.1 |    'The Great Gatsby',
-10:01:44 PM web.1 |    'The Hunger Games',
-10:01:44 PM web.1 |    'The Jungle Book' ] 'INSIDE SORT'
-10:01:44 PM web.1 |  [ '',
-10:01:44 PM web.1 |    'The Godfather',
-10:01:44 PM web.1 |    'Hitchiker\'s Guide to the Galaxy',
-10:01:44 PM web.1 |    'Lord of the Rings',
-10:01:44 PM web.1 |    'The Bee Movie',
-10:01:44 PM web.1 |    'The Big Lebowski',
-10:01:44 PM web.1 |    'The Departed',
-10:01:44 PM web.1 |    'The Great Gatsby',
-10:01:44 PM web.1 |    'The Hunger Games',
-10:01:44 PM web.1 |    'The Jungle Book' ] 'OUTSIDE SORT'
-10:01:44 PM web.1 |  [ '',
-10:01:44 PM web.1 |    'The Godfather',
-10:01:44 PM web.1 |    'The Bee Movie',
-10:01:44 PM web.1 |    'The Big Lebowski',
-10:01:44 PM web.1 |    'The Departed',
-10:01:44 PM web.1 |    'The Great Gatsby',
-10:01:44 PM web.1 |    'The Hunger Games',
-10:01:44 PM web.1 |    'The Jungle Book',
-10:01:44 PM web.1 |    'Lord of the Rings',
-10:01:44 PM web.1 |    'Hitchiker\'s Guide to the Galaxy' ] 'INSIDE SORT'
-10:01:45 PM web.1 |  DATA NOT FOUND Lord of the Rings
-10:01:45 PM web.1 |  DATA NOT FOUND Hitchiker's Guide to the Galaxy
-10:02:03 PM web.1 |  HashMap {
-10:02:03 PM web.1 |    _data: 
-10:02:03 PM web.1 |     { '♠Hitchiker\'s Guide to the Galaxy': [ 'Hitchiker\'s Guide to the Galaxy', 21 ],
-10:02:03 PM web.1 |       '♠Lord of the Rings': [ 'Lord of the Rings', 8 ],
-10:02:03 PM web.1 |       '♠The Bee Movie': [ 'The Bee Movie', 0 ],
-10:02:03 PM web.1 |       '♠The Big Lebowski': [ 'The Big Lebowski', 0 ],
-10:02:03 PM web.1 |       '♠The Departed': [ 'The Departed', 0 ],
-10:02:03 PM web.1 |       '♠The Godfather': [ 'The Godfather', 0 ],
-10:02:03 PM web.1 |       '♠The Great Gatsby': [ 'The Great Gatsby', 0 ],
-10:02:03 PM web.1 |       '♠The Hunger Games': [ 'The Hunger Games', 0 ],
-10:02:03 PM web.1 |       '♠The Jungle Book': [ 'The Jungle Book', 0 ],
-10:02:03 PM web.1 |       '♠Beetlejuice': [ 'Beetlejuice', 0 ] },
-10:02:03 PM web.1 |    _count: 10 }
-10:02:03 PM web.1 |  Hitchiker's Guide to the Galaxy
-10:02:03 PM web.1 |  Lord of the Rings
-10:02:03 PM web.1 |  The Bee Movie
-10:02:03 PM web.1 |  The Big Lebowski
-10:02:03 PM web.1 |  The Departed
-10:02:03 PM web.1 |  The Godfather
-10:02:03 PM web.1 |  The Great Gatsby
-10:02:03 PM web.1 |  The Hunger Games
-10:02:03 PM web.1 |  The Jungle Book
-10:02:03 PM web.1 |  Beetlejuice
-10:02:03 PM web.1 |  The Bee Movie
-10:02:03 PM web.1 |  The Bee Movie
-10:02:03 PM web.1 |  [ '',
-10:02:03 PM web.1 |    'The Bee Movie',
-10:02:03 PM web.1 |    'Lord of the Rings',
-10:02:03 PM web.1 |    'Beetlejuice',
-10:02:03 PM web.1 |    'The Big Lebowski',
-10:02:03 PM web.1 |    'Hitchiker\'s Guide to the Galaxy',
-10:02:03 PM web.1 |    'The Godfather',
-10:02:03 PM web.1 |    'The Great Gatsby',
-10:02:03 PM web.1 |    'The Hunger Games',
-10:02:03 PM web.1 |    'The Jungle Book',
-10:02:03 PM web.1 |    'The Departed' ] 'INSIDE SORT'
-10:02:03 PM web.1 |  [ '',
-10:02:03 PM web.1 |    'The Bee Movie',
-10:02:03 PM web.1 |    'Lord of the Rings',
-10:02:03 PM web.1 |    'Beetlejuice',
-10:02:03 PM web.1 |    'The Big Lebowski',
-10:02:03 PM web.1 |    'Hitchiker\'s Guide to the Galaxy',
-10:02:03 PM web.1 |    'The Godfather',
-10:02:03 PM web.1 |    'The Great Gatsby',
-10:02:03 PM web.1 |    'The Hunger Games',
-10:02:03 PM web.1 |    'The Jungle Book',
-10:02:03 PM web.1 |    'The Departed' ] 'OUTSIDE SORT'
-10:02:03 PM web.1 |  [ '',
-10:02:03 PM web.1 |    'The Departed',
-10:02:03 PM web.1 |    'The Jungle Book',
-10:02:03 PM web.1 |    'Beetlejuice',
-10:02:03 PM web.1 |    'The Big Lebowski',
-10:02:03 PM web.1 |    'The Bee Movie',
-10:02:03 PM web.1 |    'The Godfather',
-10:02:03 PM web.1 |    'The Great Gatsby',
-10:02:03 PM web.1 |    'The Hunger Games',
-10:02:03 PM web.1 |    'Lord of the Rings',
-10:02:03 PM web.1 |    'Hitchiker\'s Guide to the Galaxy' ] 'INSIDE SORT'
-10:02:04 PM web.1 |  DATA NOT FOUND Lord of the Rings
-10:02:04 PM web.1 |  DATA NOT FOUND Hitchiker's Guide to the Galaxy
+10:42:18 PM web.1 |  > cs4241-a3-YOURNAME@0.0.1 start /home/bwbonanno/Documents/Webware/A3/A3-Filters
+10:42:18 PM web.1 |  > node server.js
+10:42:18 PM web.1 |  listening on 8080
+10:42:20 PM web.1 |  HashMap { _data: {}, _count: 0 }
+10:42:20 PM web.1 |  [] 'INSIDE SORT'
+10:42:20 PM web.1 |  [] 'INSIDE SORT'
+10:42:20 PM web.1 |  [] 'OUTSIDE SORT'
+10:42:20 PM web.1 |  DATA NOT FOUND { search: 'Juno' }
+10:42:20 PM web.1 |  Unhandled rejection TypeError: Cannot convert object to primitive value
+10:42:20 PM web.1 |      at /home/bwbonanno/Documents/Webware/A3/A3-Filters/server.js:167:35
+10:42:20 PM web.1 |      at /home/bwbonanno/Documents/Webware/A3/A3-Filters/node_modules/imdb-api/lib/imdb.js:178:13
+10:42:20 PM web.1 |      at tryCatcher (/home/bwbonanno/Documents/Webware/A3/A3-Filters/node_modules/bluebird/js/release/util.js:16:23)
+10:42:20 PM web.1 |      at Promise._settlePromiseFromHandler (/home/bwbonanno/Documents/Webware/A3/A3-Filters/node_modules/bluebird/js/release/promise.js:510:31)
+10:42:20 PM web.1 |      at Promise._settlePromise (/home/bwbonanno/Documents/Webware/A3/A3-Filters/node_modules/bluebird/js/release/promise.js:567:18)
+10:42:20 PM web.1 |      at Promise._settlePromise0 (/home/bwbonanno/Documents/Webware/A3/A3-Filters/node_modules/bluebird/js/release/promise.js:612:10)
+10:42:20 PM web.1 |      at Promise._settlePromises (/home/bwbonanno/Documents/Webware/A3/A3-Filters/node_modules/bluebird/js/release/promise.js:687:18)
+10:42:20 PM web.1 |      at Async._drainQueue (/home/bwbonanno/Documents/Webware/A3/A3-Filters/node_modules/bluebird/js/release/async.js:138:16)
+10:42:20 PM web.1 |      at Async._drainQueues (/home/bwbonanno/Documents/Webware/A3/A3-Filters/node_modules/bluebird/js/release/async.js:148:10)
+10:42:20 PM web.1 |      at Immediate.Async.drainQueues (/home/bwbonanno/Documents/Webware/A3/A3-Filters/node_modules/bluebird/js/release/async.js:17:14)
+10:42:20 PM web.1 |      at runCallback (timers.js:637:20)
+10:42:20 PM web.1 |      at tryOnImmediate (timers.js:610:5)
+10:42:20 PM web.1 |      at processImmediate [as _immediateCallback] (timers.js:582:5)
+10:42:20 PM web.1 |      at Function.module.exports.runLoopOnce (/home/bwbonanno/Documents/Webware/A3/A3-Filters/node_modules/deasync/index.js:66:11)
+10:42:20 PM web.1 |      at handleSearch (/home/bwbonanno/Documents/Webware/A3/A3-Filters/server.js:182:13)
+10:42:20 PM web.1 |      at Server.<anonymous> (/home/bwbonanno/Documents/Webware/A3/A3-Filters/server.js:22:4)
+10:42:20 PM web.1 |      at emitTwo (events.js:106:13)
+10:42:20 PM web.1 |      at Server.emit (events.js:191:7)
+10:42:20 PM web.1 |      at HTTPParser.parserOnIncoming [as onIncoming] (_http_server.js:547:12)
+10:42:20 PM web.1 |      at HTTPParser.parserOnHeadersComplete (_http_common.js:99:23)
 [DONE] Killing all processes with signal  SIGINT
