@@ -1,14 +1,14 @@
 0 info it worked if it ends with ok
 1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'start' ]
 2 info using npm@3.10.9
-3 info using node@v7.0.0
+3 info using node@v7.1.0
 4 verbose run-script [ 'prestart', 'start', 'poststart' ]
 5 info lifecycle cs4241-a3-YOURNAME@0.0.1~prestart: cs4241-a3-YOURNAME@0.0.1
 6 silly lifecycle cs4241-a3-YOURNAME@0.0.1~prestart: no script for prestart, continuing
 7 info lifecycle cs4241-a3-YOURNAME@0.0.1~start: cs4241-a3-YOURNAME@0.0.1
 8 verbose lifecycle cs4241-a3-YOURNAME@0.0.1~start: unsafe-perm in lifecycle true
-9 verbose lifecycle cs4241-a3-YOURNAME@0.0.1~start: PATH: /usr/lib/node_modules/npm/bin/node-gyp-bin:/home/bwbonanno/Documents/Webware/A3/A3-Filters/node_modules/.bin:/home/bwbonanno/Documents/Scripts/:/usr/local/heroku/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/opt/staruml/
-10 verbose lifecycle cs4241-a3-YOURNAME@0.0.1~start: CWD: /home/bwbonanno/Documents/Webware/A3/A3-Filters
+9 verbose lifecycle cs4241-a3-YOURNAME@0.0.1~start: PATH: /usr/lib/node_modules/npm/bin/node-gyp-bin:/home/bwbonanno/Documents/Webware/A4/A3-Filters/node_modules/.bin:/home/bwbonanno/Documents/Scripts/:/usr/local/heroku/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/opt/staruml/
+10 verbose lifecycle cs4241-a3-YOURNAME@0.0.1~start: CWD: /home/bwbonanno/Documents/Webware/A4/A3-Filters
 11 silly lifecycle cs4241-a3-YOURNAME@0.0.1~start: Args: [ '-c', 'node server.js' ]
 12 silly lifecycle cs4241-a3-YOURNAME@0.0.1~start: Returned: code: 1  signal: null
 13 info lifecycle cs4241-a3-YOURNAME@0.0.1~start: Failed to exec start script
@@ -20,13 +20,13 @@
 14 verbose stack     at ChildProcess.<anonymous> (/usr/lib/node_modules/npm/lib/utils/spawn.js:40:14)
 14 verbose stack     at emitTwo (events.js:106:13)
 14 verbose stack     at ChildProcess.emit (events.js:191:7)
-14 verbose stack     at maybeClose (internal/child_process.js:877:16)
+14 verbose stack     at maybeClose (internal/child_process.js:885:16)
 14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
 15 verbose pkgid cs4241-a3-YOURNAME@0.0.1
-16 verbose cwd /home/bwbonanno/Documents/Webware/A3/A3-Filters
+16 verbose cwd /home/bwbonanno/Documents/Webware/A4/A3-Filters
 17 error Linux 4.8.6-1-ARCH
 18 error argv "/usr/bin/node" "/usr/bin/npm" "start"
-19 error node v7.0.0
+19 error node v7.1.0
 20 error npm  v3.10.9
 21 error code ELIFECYCLE
 22 error cs4241-a3-YOURNAME@0.0.1 start: `node server.js`

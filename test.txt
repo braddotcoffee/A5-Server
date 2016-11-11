@@ -1,41 +1,168 @@
-12:09:24 AM web.1 |  > cs4241-a3-YOURNAME@0.0.1 start /home/bwbonanno/Documents/Webware/A3/A3-Filters
-12:09:24 AM web.1 |  > node server.js
-12:09:25 AM web.1 |  /home/bwbonanno/Documents/Webware/A3/A3-Filters/server.js:303
-12:09:25 AM web.1 |  	html = html + '</ul>
-12:09:25 AM web.1 |  	              ^^^^^^
-12:09:25 AM web.1 |  SyntaxError: Invalid or unexpected token
-12:09:25 AM web.1 |      at Object.exports.runInThisContext (vm.js:76:16)
-12:09:25 AM web.1 |      at Module._compile (module.js:545:28)
-12:09:25 AM web.1 |      at Object.Module._extensions..js (module.js:582:10)
-12:09:25 AM web.1 |      at Module.load (module.js:490:32)
-12:09:25 AM web.1 |      at tryModuleLoad (module.js:449:12)
-12:09:25 AM web.1 |      at Function.Module._load (module.js:441:3)
-12:09:25 AM web.1 |      at Module.runMain (module.js:607:10)
-12:09:25 AM web.1 |      at run (bootstrap_node.js:382:7)
-12:09:25 AM web.1 |      at startup (bootstrap_node.js:137:9)
-12:09:25 AM web.1 |      at bootstrap_node.js:497:3
-12:09:25 AM web.1 |  npm
-12:09:25 AM web.1 |   ERR! Linux 4.8.6-1-ARCH
-12:09:25 AM web.1 |  npm ERR! argv "/usr/bin/node" "/usr/bin/npm" "start"
-12:09:25 AM web.1 |  npm ERR! node v7.0.0
-12:09:25 AM web.1 |  npm ERR! npm  v3.10.9
-12:09:25 AM web.1 |  npm ERR! code ELIFECYCLE
-12:09:25 AM web.1 |  npm ERR! cs4241-a3-YOURNAME@0.0.1 start: `node server.js`
-12:09:25 AM web.1 |  npm ERR! Exit status 1
-12:09:25 AM web.1 |  npm ERR! 
-12:09:25 AM web.1 |  npm ERR! Failed at the cs4241-a3-YOURNAME@0.0.1 start script 'node server.js'.
-12:09:25 AM web.1 |  npm ERR! Make sure you have the latest version of node.js and npm installed.
-12:09:25 AM web.1 |  npm ERR! If you do, this is most likely a problem with the cs4241-a3-YOURNAME package,
-12:09:25 AM web.1 |  npm ERR! not with npm itself.
-12:09:25 AM web.1 |  npm ERR! Tell the author that this fails on your system:
-12:09:25 AM web.1 |  npm ERR!     node server.js
-12:09:25 AM web.1 |  npm ERR! You can get information on how to open an issue for this project with:
-12:09:25 AM web.1 |  npm ERR!     npm bugs cs4241-a3-YOURNAME
-12:09:25 AM web.1 |  npm ERR! Or if that isn't available, you can get their info via:
-12:09:25 AM web.1 |  npm 
-12:09:25 AM web.1 |  ERR!     npm owner ls cs4241-a3-YOURNAME
-12:09:25 AM web.1 |  npm ERR! There is likely additional logging output above.
-12:09:25 AM web.1 |  npm ERR! Please include the following file with any support request:
-12:09:25 AM web.1 |  npm ERR!
-12:09:25 AM web.1 |       /home/bwbonanno/Documents/Webware/A3/A3-Filters/npm-debug.log
+12:24:15 AM web.1 |  > cs4241-a3-YOURNAME@0.0.1 start /home/bwbonanno/Documents/Webware/A4/A3-Filters
+12:24:15 AM web.1 |  > node server.js
+12:24:15 AM web.1 |  5
+12:24:15 AM web.1 |  5
+12:24:15 AM web.1 |  5
+12:24:15 AM web.1 |  5
+12:24:15 AM web.1 |  5
+12:24:15 AM web.1 |  5
+12:24:15 AM web.1 |  5
+12:24:15 AM web.1 |  5
+12:24:15 AM web.1 |  5
+12:24:15 AM web.1 |  5
+12:24:15 AM web.1 |  5
+12:24:15 AM web.1 |  5
+12:24:15 AM web.1 |  5
+12:24:15 AM web.1 |  5
+12:24:15 AM web.1 |  5
+12:24:15 AM web.1 |  5
+12:24:15 AM web.1 |  5
+12:24:15 AM web.1 |  5
+12:24:15 AM web.1 |  5
+12:24:15 AM web.1 |  5
+12:24:15 AM web.1 |  5
+12:24:15 AM web.1 |  5
+12:24:15 AM web.1 |  5
+12:24:15 AM web.1 |  5
+12:24:15 AM web.1 |  5
+12:24:15 AM web.1 |  5
+12:24:15 AM web.1 |  5
+12:24:15 AM web.1 |  5
+12:24:15 AM web.1 |  5
+12:24:15 AM web.1 |  5
+12:24:15 AM web.1 |  5
+12:24:15 AM web.1 |  5
+12:24:15 AM web.1 |  5
+12:24:15 AM web.1 |  5
+12:24:15 AM web.1 |  5
+12:24:15 AM web.1 |  5
+12:24:15 AM web.1 |  5
+12:24:15 AM web.1 |  5
+12:24:15 AM web.1 |  5
+12:24:15 AM web.1 |  5
+12:24:15 AM web.1 |  5
+12:24:15 AM web.1 |  5
+12:24:15 AM web.1 |  5
+12:24:15 AM web.1 |  listening on 8080
+12:24:17 AM web.1 |  [ '500 Days of Summer ',
+12:24:17 AM web.1 |    'A Beautiful Mind ',
+12:24:17 AM web.1 |    'A Christmas Carol ',
+12:24:17 AM web.1 |    'Aladdin ',
+12:24:17 AM web.1 |    'Batman vs. Superman ',
+12:24:17 AM web.1 |    'Beetlejuice ',
+12:24:17 AM web.1 |    'Breakfast Club ',
+12:24:17 AM web.1 |    'Citizen Kane ',
+12:24:17 AM web.1 |    'Doctor Strange ',
+12:24:17 AM web.1 |    'Fight Club ',
+12:24:17 AM web.1 |    'Frozen ',
+12:24:17 AM web.1 |    'Guardians of the Galaxy ',
+12:24:17 AM web.1 |    'Harry Potter ',
+12:24:17 AM web.1 |    'Harry Potter ',
+12:24:17 AM web.1 |    'Hitchikers Guide to the Galaxy ',
+12:24:17 AM web.1 |    'Iron Man ',
+12:24:17 AM web.1 |    'Jaws ',
+12:24:17 AM web.1 |    'Jaws 2 ',
+12:24:17 AM web.1 |    'Jaws 3 ',
+12:24:17 AM web.1 |    'Legends of the Fall ',
+12:24:17 AM web.1 |    'Lion King ',
+12:24:17 AM web.1 |    'Little Miss Sunshine ',
+12:24:17 AM web.1 |    'Lord of the Rings ',
+12:24:17 AM web.1 |    'Mulan ',
+12:24:17 AM web.1 |    'Pulp Fiction ',
+12:24:17 AM web.1 |    'Rain Man ',
+12:24:17 AM web.1 |    'Sharknado ',
+12:24:17 AM web.1 |    'Snakes on a Plane ',
+12:24:17 AM web.1 |    'Star Trek ',
+12:24:17 AM web.1 |    'Star Wars ',
+12:24:17 AM web.1 |    'Tangled ',
+12:24:17 AM web.1 |    'Tarzan ',
+12:24:17 AM web.1 |    'The Bee Movie ',
+12:24:17 AM web.1 |    'The Big Lebowski ',
+12:24:17 AM web.1 |    'The Blind Side ',
+12:24:17 AM web.1 |    'The Departed ',
+12:24:17 AM web.1 |    'The Fountain ',
+12:24:17 AM web.1 |    'The Godfather ',
+12:24:17 AM web.1 |    'The Great Gatsby ',
+12:24:17 AM web.1 |    'The Hunger Games ',
+12:24:17 AM web.1 |    'The Jungle Book ',
+12:24:17 AM web.1 |    'The Truman Show ',
+12:24:17 AM web.1 |    'Treasure Island ' ]
+12:24:17 AM web.1 |  500 Days of Summer 
+12:24:17 AM web.1 |  A Beautiful Mind 
+12:24:17 AM web.1 |  A Christmas Carol 
+12:24:17 AM web.1 |  Aladdin 
+12:24:17 AM web.1 |  Batman vs. Superman 
+12:24:17 AM web.1 |  Beetlejuice 
+12:24:17 AM web.1 |  Breakfast Club 
+12:24:17 AM web.1 |  Citizen Kane 
+12:24:17 AM web.1 |  Doctor Strange 
+12:24:17 AM web.1 |  Fight Club 
+12:24:17 AM web.1 |  Frozen 
+12:24:17 AM web.1 |  Guardians of the Galaxy 
+12:24:17 AM web.1 |  Harry Potter 
+12:24:17 AM web.1 |  Harry Potter 
+12:24:17 AM web.1 |  Hitchikers Guide to the Galaxy 
+12:24:17 AM web.1 |  Iron Man 
+12:24:17 AM web.1 |  Jaws 
+12:24:17 AM web.1 |  Jaws 2 
+12:24:17 AM web.1 |  Jaws 3 
+12:24:17 AM web.1 |  Legends of the Fall 
+12:24:17 AM web.1 |  Lion King 
+12:24:17 AM web.1 |  Little Miss Sunshine 
+12:24:17 AM web.1 |  Lord of the Rings 
+12:24:17 AM web.1 |  Mulan 
+12:24:17 AM web.1 |  Pulp Fiction 
+12:24:17 AM web.1 |  Rain Man 
+12:24:17 AM web.1 |  Sharknado 
+12:24:17 AM web.1 |  Snakes on a Plane 
+12:24:17 AM web.1 |  Star Trek 
+12:24:17 AM web.1 |  Star Wars 
+12:24:17 AM web.1 |  Tangled 
+2:24:17 AM web.1 |  Tarzan 
+12:24:17 AM web.1 |  The Bee Movie 
+12:24:17 AM web.1 |  The Big Lebowski 
+12:24:17 AM web.1 |  The Blind Side 
+12:24:17 AM web.1 |  The Departed 
+12:24:17 AM web.1 |  The Fountain 
+12:24:17 AM web.1 |  The Godfather 
+12:24:17 AM web.1 |  The Great Gatsby 
+12:24:17 AM web.1 |  The Hunger Games 
+12:24:17 AM web.1 |  The Jungle Book 
+12:24:17 AM web.1 |  The Truman Show 
+12:24:17 AM web.1 |  Treasure Island 
+12:24:17 AM web.1 |  /home/bwbonanno/Documents/Webware/A4/A3-Filters/server.js:416
+12:24:17 AM web.1 |  			}).join(' ')
+12:24:17 AM web.1 |  			  ^
+12:24:17 AM web.1 |  TypeError: Cannot read property 'join' of undefined
+12:24:17 AM web.1 |      at sendIndex (/home/bwbonanno/Documents/Webware/A4/A3-Filters/server.js:416:6)
+12:24:17 AM web.1 |      at handleURI (/home/bwbonanno/Documents/Webware/A4/A3-Filters/server.js:64:11)
+12:24:17 AM web.1 |      at IncomingMessage.<anonymous> (/home/bwbonanno/Documents/Webware/A4/A3-Filters/server.js:47:3)
+12:24:17 AM web.1 |      at emitNone (events.js:86:13)
+12:24:17 AM web.1 |      at IncomingMessage.emit (events.js:185:7)
+12:24:17 AM web.1 |      at endReadableNT (_stream_readable.js:974:12)
+12:24:17 AM web.1 |      at _combinedTickCallback (internal/process/next_tick.js:74:11)
+12:24:17 AM web.1 |      at process._tickCallback (internal/process/next_tick.js:98:9)
+12:24:17 AM web.1 |  npm
+12:24:17 AM web.1 |   ERR! Linux 4.8.6-1-ARCH
+12:24:17 AM web.1 |  npm ERR! argv "/usr/bin/node" "/usr/bin/npm" "start"
+12:24:17 AM web.1 |  npm ERR! node v7.1.0
+12:24:17 AM web.1 |  npm ERR! npm  v3.10.9
+12:24:17 AM web.1 |  npm ERR! code ELIFECYCLE
+12:24:17 AM web.1 |  npm ERR! cs4241-a3-YOURNAME@0.0.1 start: `node server.js`
+12:24:17 AM web.1 |  npm ERR! Exit status 1
+12:24:17 AM web.1 |  npm ERR! 
+12:24:17 AM web.1 |  npm ERR! Failed at the cs4241-a3-YOURNAME@0.0.1 start script 'node server.js'.
+12:24:17 AM web.1 |  npm ERR! Make sure you have the latest version of node.js and npm installed.
+12:24:17 AM web.1 |  npm ERR! If you do, this is most likely a problem with the cs4241-a3-YOURNAME package,
+12:24:17 AM web.1 |  npm ERR! not with npm itself.
+12:24:17 AM web.1 |  npm ERR! Tell the author that this fails on your system:
+12:24:17 AM web.1 |  npm ERR!     node server.js
+12:24:17 AM web.1 |  npm ERR! You can get information on how to open an issue for this project with:
+12:24:17 AM web.1 |  npm ERR!     npm bugs cs4241-a3-YOURNAME
+12:24:17 AM web.1 |  npm ERR! Or if that isn't available, you can get their info via:
+12:24:17 AM web.1 |  npm ERR!     npm owner ls cs4241-a3-YOURNAME
+12:24:17 AM web.1 |  npm ERR! There is likely additional logging output above.
+12:24:17 AM web.1 |  npm
+12:24:17 AM web.1 |   ERR! Please include the following file with any support request:
+12:24:17 AM web.1 |  npm ERR!     /home/bwbonanno/Documents/Webware/A4/A3-Filters/npm-debug.log
 [DONE] Killing all processes with signal  null
