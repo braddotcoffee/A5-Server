@@ -149,17 +149,19 @@ function imdbQuery(query_copy)
 			info = info + 
 				"<li class='info'>Director: " + data.director + "</li>" + 
 				"<li class='info'>Year: " + data._year_data + "</li>" +
-				"<li class='info'>Rating: " + data.rated + "</li>" + 
-				"<li class='info'>Runtime: " + data.runtime + "</li>";
-		}
-		db.run("INSERT INTO movies VALUES ('" + query_copy + "', 5)", function(){
-			movies.push(query_copy);
-			movies = movies.sort();
-			movies = movies.map(function(movie){
-				return movie = movie + " ";	
-			});
+				"<li class='info'>Rated: " + data.rated + "</li>" + 
+				"<li class='info'>Runtime: " + data.runtime + "</li>" +
+				"<li class='info'>Rating: "+ data.rating + "</li>";
 
-		});
+			db.run("INSERT INTO movies VALUES ('" + query_copy + "',"+data.rating+")", function(){
+				console.log("Database Query Done");
+				movies.push(query_copy+ " ");
+				movies = movies.sort();
+
+				data = '';
+
+			});
+		}
 
 
 	});
@@ -271,7 +273,9 @@ function handleSearch(res, uri) {
 							"<li class='info'>Director: " + data.director + "</li>" + 
 							"<li class='info'>Year: " + data._year_data + "</li>" +
 							"<li class='info'>Rating: " + data.rated + "</li>" + 
-							"<li class='info'>Runtime: " + data.runtime + "</li>";
+							"<li class='info'>Runtime: " + data.runtime + "</li>" +
+							"<li class='info'>Rating: "+ data.rating + "</li>";
+							
 					}
 
 				})
@@ -328,7 +332,6 @@ function updateMovies(req, res, uri, data){
 
 	db.run("INSERT INTO movies VALUES ('" + title + "', 5)", function(){
 		movies.push(title);
-		ratingsMap.set(title, 5);
 		sendIndex(res);
 
 	});
@@ -373,7 +376,6 @@ function sendIndex(res) {
 	//
 	// For a challenge, try rewriting this function to take the filtered movies list as a parameter, to avoid changing to a page that lists only movies.
 
-	console.log(movies);
 
 	async.map(movies, function(d, callback) {
 
@@ -381,6 +383,7 @@ function sendIndex(res) {
 		db.get("SELECT * FROM movies WHERE title='"+d.substring(0,d.length-1)+"'", function(error, rating){
 
 			if(rating){
+				console.log("Completed " + d);
 
 				var info = '';
 				info = info + "<a href='/search?search="+d+"'>";
@@ -398,20 +401,20 @@ function sendIndex(res) {
 				callback(null, info); 
 			}
 		})}, function(error, results){
-				results = results.join(' ');
-				html = html + results;
-				html = html + "</div>";
-				html = html + "<div class='links-div'>";
-				html = html + "<a href='/README.md' class='links'>README</a>";
-				html = html + "</div class='links-div>";
+			results = results.join(' ');
+			html = html + results;
+			html = html + "</div>";
+			html = html + "<div class='links-div'>";
+			html = html + "<a href='/README.md' class='links'>README</a>";
+			html = html + "</div class='links-div>";
 
-				html = html + '</body>'
-				html = html + '</html>'
+			html = html + '</body>'
+			html = html + '</html>'
 
-				res.writeHead(200, {'Content-type': contentType})
-				res.end(html, 'utf-8')
-				html = "";
-			})
+			res.writeHead(200, {'Content-type': contentType})
+			res.end(html, 'utf-8')
+			html = "";
+		})
 }
 
 function sendFile(res, filename, contentType) {

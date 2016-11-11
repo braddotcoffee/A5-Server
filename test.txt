@@ -1,0 +1,134 @@
+11:28:33 AM web.1 |  > cs4241-a3-YOURNAME@0.0.1 start /home/bwbonanno/Documents/Webware/A4/A3-Filters
+11:28:33 AM web.1 |  > node server.js
+11:28:34 AM web.1 |  listening on 8080
+11:28:39 AM web.1 |  [ '500 Days of Summer ',
+11:28:39 AM web.1 |    'A Beautiful Mind ',
+11:28:39 AM web.1 |    'A Christmas Carol ',
+11:28:39 AM web.1 |    'Aladdin ',
+11:28:39 AM web.1 |    'Batman vs. Superman ',
+11:28:39 AM web.1 |    'Beetlejuice ',
+11:28:39 AM web.1 |    'Breakfast Club ',
+11:28:39 AM web.1 |    'Citizen Kane ',
+11:28:39 AM web.1 |    'Doctor Strange ',
+11:28:39 AM web.1 |    'Fight Club ',
+11:28:39 AM web.1 |    'Frozen ',
+11:28:39 AM web.1 |    'Guardians of the Galaxy ',
+11:28:39 AM web.1 |    'Harry Potter ',
+11:28:39 AM web.1 |    'Hitchikers Guide to the Galaxy ',
+11:28:39 AM web.1 |    'Iron Man ',
+11:28:39 AM web.1 |    'Jaws ',
+11:28:39 AM web.1 |    'Jaws 2 ',
+11:28:39 AM web.1 |    'Jaws 3 ',
+11:28:39 AM web.1 |    'Juno ',
+11:28:39 AM web.1 |    'Legends of the Fall ',
+11:28:39 AM web.1 |    'Lion King ',
+11:28:39 AM web.1 |    'Little Miss Sunshine ',
+11:28:39 AM web.1 |    'Lord of the Rings ',
+11:28:39 AM web.1 |    'Mulan ',
+11:28:39 AM web.1 |    'Pulp Fiction ',
+11:28:39 AM web.1 |    'Rain Man ',
+11:28:39 AM web.1 |    'Reservoir Dogs ',
+11:28:39 AM web.1 |    'Sharknado ',
+11:28:39 AM web.1 |    'Snakes on a Plane ',
+11:28:39 AM web.1 |    'Star Trek ',
+11:28:39 AM web.1 |    'Star Wars ',
+11:28:39 AM web.1 |    'Tangled ',
+11:28:39 AM web.1 |    'Tarzan ',
+11:28:39 AM web.1 |    'The Bee Movie ',
+11:28:39 AM web.1 |    'The Big Lebowski ',
+11:28:39 AM web.1 |    'The Departed ',
+11:28:39 AM web.1 |    'The Fountain ',
+11:28:39 AM web.1 |    'The Godfather ',
+11:28:39 AM web.1 |    'The Great Gatsby ',
+11:28:39 AM web.1 |    'The Hunger Games ',
+11:28:39 AM web.1 |    'The Jungle Book ',
+11:28:39 AM web.1 |    'The Truman Show ' ]
+11:28:39 AM web.1 |  Completed 500 Days of Summer 
+11:28:39 AM web.1 |  Completed A Beautiful Mind 
+11:28:39 AM web.1 |  Completed A Christmas Carol 
+11:28:39 AM web.1 |  Completed Aladdin 
+11:28:39 AM web.1 |  Completed Batman vs. Superman 
+11:28:39 AM web.1 |  Completed Beetlejuice 
+11:28:39 AM web.1 |  Completed Breakfast Club 
+11:28:39 AM web.1 |  Completed Citizen Kane 
+11:28:39 AM web.1 |  Completed Doctor Strange 
+11:28:39 AM web.1 |  Completed Fight Club 
+11:28:39 AM web.1 |  Completed Frozen 
+11:28:39 AM web.1 |  Completed Guardians of the Galaxy 
+11:28:39 AM web.1 |  Completed Harry Potter 
+11:28:39 AM web.1 |  Completed Hitchikers Guide to the Galaxy 
+11:28:39 AM web.1 |  Completed Iron Man 
+11:28:39 AM web.1 |  Completed Jaws 
+11:28:39 AM web.1 |  Completed Jaws 2 
+11:28:39 AM web.1 |  Completed Jaws 3 
+11:28:39 AM web.1 |  Completed Juno 
+11:28:39 AM web.1 |  Completed Legends of the Fall 
+11:28:39 AM web.1 |  Completed Lion King 
+11:28:39 AM web.1 |  Completed Little Miss Sunshine 
+11:28:39 AM web.1 |  Completed Lord of the Rings 
+11:28:39 AM web.1 |  Completed Mulan 
+11:28:39 AM web.1 |  Completed Pulp Fiction 
+11:28:39 AM web.1 |  Completed Rain Man 
+11:28:39 AM web.1 |  Completed Reservoir Dogs 
+11:28:39 AM web.1 |  Completed Sharknado 
+11:28:39 AM web.1 |  Completed Snakes on a Plane 
+11:28:39 AM web.1 |  Completed Star Trek 
+11:28:39 AM web.1 |  Completed Star Wars 
+11:28:39 AM web.1 |  Completed Tangled 
+11:28:39 AM web.1 |  Completed Tarzan 
+11:28:39 AM web.1 |  Completed The Bee Movie 
+11:28:39 AM web.1 |  Completed The Big Lebowski 
+11:28:39 AM web.1 |  Completed The Departed 
+11:28:39 AM web.1 |  Completed The Fountain 
+11:28:39 AM web.1 |  Completed The Godfather 
+11:28:39 AM web.1 |  Completed The Great Gatsby 
+11:28:39 AM web.1 |  Completed The Hunger Games 
+11:28:39 AM web.1 |  Completed The Jungle Book 
+11:28:39 AM web.1 |  Completed The Truman Show 
+11:29:24 AM web.1 |  The Toxic Avenger
+11:29:24 AM web.1 |  Database Query Done
+11:29:26 AM web.1 |  [ '500 Days of Summer  ',
+11:29:26 AM web.1 |    'A Beautiful Mind  ',
+11:29:26 AM web.1 |    'A Christmas Carol  ',
+11:29:26 AM web.1 |    'Aladdin  ',
+11:29:26 AM web.1 |    'Batman vs. Superman  ',
+11:29:26 AM web.1 |    'Beetlejuice  ',
+11:29:26 AM web.1 |    'Breakfast Club  ',
+11:29:26 AM web.1 |    'Citizen Kane  ',
+11:29:26 AM web.1 |    'Doctor Strange  ',
+11:29:26 AM web.1 |    'Fight Club  ',
+11:29:26 AM web.1 |    'Frozen  ',
+11:29:26 AM web.1 |    'Guardians of the Galaxy  ',
+11:29:26 AM web.1 |    'Harry Potter  ',
+11:29:26 AM web.1 |    'Hitchikers Guide to the Galaxy  ',
+11:29:26 AM web.1 |    'Iron Man  ',
+11:29:26 AM web.1 |    'Jaws  ',
+11:29:26 AM web.1 |    'Jaws 2  ',
+11:29:26 AM web.1 |    'Jaws 3  ',
+11:29:26 AM web.1 |    'Juno  ',
+11:29:26 AM web.1 |    'Legends of the Fall  ',
+11:29:26 AM web.1 |    'Lion King  ',
+11:29:26 AM web.1 |    'Little Miss Sunshine  ',
+11:29:26 AM web.1 |    'Lord of the Rings  ',
+11:29:26 AM web.1 |    'Mulan  ',
+11:29:26 AM web.1 |    'Pulp Fiction  ',
+11:29:26 AM web.1 |    'Rain Man  ',
+11:29:26 AM web.1 |    'Reservoir Dogs  ',
+11:29:26 AM web.1 |    'Sharknado  ',
+11:29:26 AM web.1 |    'Snakes on a Plane  ',
+11:29:26 AM web.1 |    'Star Trek  ',
+11:29:26 AM web.1 |    'Star Wars  ',
+11:29:26 AM web.1 |    'Tangled  ',
+11:29:26 AM web.1 |    'Tarzan  ',
+11:29:26 AM web.1 |    'The Bee Movie  ',
+11:29:26 AM web.1 |    'The Big Lebowski  ',
+11:29:26 AM web.1 |    'The Departed  ',
+11:29:26 AM web.1 |    'The Fountain  ',
+11:29:26 AM web.1 |    'The Godfather  ',
+11:29:26 AM web.1 |    'The Great Gatsby  ',
+11:29:26 AM web.1 |    'The Hunger Games  ',
+11:29:26 AM web.1 |    'The Jungle Book  ',
+11:29:26 AM web.1 |    'The Toxic Avenger ',
+11:29:26 AM web.1 |    'The Truman Show  ' ]
+11:29:26 AM web.1 |  Completed The Toxic Avenger 
+[DONE] Killing all processes with signal  SIGINT
