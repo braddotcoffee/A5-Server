@@ -153,7 +153,7 @@ function imdbQuery(query_copy)
 				"<li class='info'>Runtime: " + data.runtime + "</li>" +
 				"<li class='info'>Rating: "+ data.rating + "</li>";
 
-			db.run("INSERT INTO movies VALUES ('" + query_copy + "',"+data.rating+")", function(){
+			db.run("INSERT INTO movies VALUES ('" + query_copy + "','"+data.rating+"')", function(){
 				console.log("Database Query Done");
 				movies.push(query_copy+ " ");
 				movies = movies.sort();
@@ -238,7 +238,7 @@ function handleSearch(res, uri) {
 
 		html = html + "<body>";
 		html = html + "<h1> RESULTS </h1>";
-		if (count >= 5)
+		if (count >= 4)
 		{
 			html = html + "<div class='links-div'>";
 			html = html + "<a href='/' class='links'>Search Again</a>";
@@ -401,6 +401,7 @@ function sendIndex(res) {
 				callback(null, info); 
 			}
 		})}, function(error, results){
+			console.log("All Done!");
 			results = results.join(' ');
 			html = html + results;
 			html = html + "</div>";

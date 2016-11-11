@@ -12,7 +12,7 @@ db.each("SELECT * FROM movies", function(err, movie){
 	movies.forEach(function(movie){
 		imdb.getReq({name:movie}, function(error, data){
 			if(data){
-				db.run("UPDATE movies SET rating="+data.rating+" WHERE title='"+movie+"'");
+				db.run("UPDATE movies SET rating='"+data.rating+"' WHERE title='"+movie+"'");
 			}
 		});
 	});
