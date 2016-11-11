@@ -14,7 +14,7 @@ filestream.on('end', function(){
 	console.log(data);
 	
 	db.serialize(function(){
-		db.run("CREATE TABLE movies (title varchar(100), rating int)");
+		db.run("CREATE TABLE movies (title varchar(100), rating float)");
 		data.forEach(function(d){
 			if(d){
 				db.run("INSERT INTO movies VALUES ('"+d+"', 5)");
