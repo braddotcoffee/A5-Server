@@ -41,7 +41,23 @@ var server = http.createServer (function (req, res) {
 	});
 
 	req.on('end', function(){
-		handleURI(req,res,uri,data);
+		console.log(data);
+		if(data){
+			var post = qs.parse(data);
+
+			if(post.func == 'add'){
+				addCallback(post,res);
+			}
+			else if (post.func == 'delete'){
+				deleteCallback(post,res);
+			}
+			else{
+				handleURI(req,res,uri,data);
+			}
+		}
+		else{
+			handleURI(req,res,uri,data);
+		}
 	});
 
 })  
@@ -58,10 +74,16 @@ function handleURI(req, res, uri, data){
 			break
 		case '/':
 			if(data){ updateMovies(req, res, uri, data) }
-			else { sendIndex(res) };
+			else { searchSetup(res) };
 			break
 		case '/index.html':
-			sendIndex(res);
+			searchSetup(res);
+			break
+		case '/manage':
+			manageSetup(res);
+			break;
+		case '/manage/':
+			manageSetup(res);
 			break
 		case '/css/style.css':
 			sendFile(res, 'css/style.css', 'text/css')
@@ -275,7 +297,7 @@ function handleSearch(res, uri) {
 							"<li class='info'>Rating: " + data.rated + "</li>" + 
 							"<li class='info'>Runtime: " + data.runtime + "</li>" +
 							"<li class='info'>Rating: "+ data.rating + "</li>";
-							
+
 					}
 
 				})
@@ -337,13 +359,98 @@ function updateMovies(req, res, uri, data){
 	});
 }
 
+function manageSetup(res){
+	html = '';
 
-// Note: consider this your "index.html" for this assignment
-function sendIndex(res) {
+	html = html + '<html>'
+
+	html = html + '<head>'
+	// You could add a CSS and/or js call here...
+	html = html + "<link href='/node_modules/bootstrap/dist/css/bootstrap.css' rel='stylesheet'>";
+	html = html + "<link href='/node_modules/bootstrap/dist/css/bootstrap-theme.css' rel='stylesheet'>"
+	html = html + "<link rel='stylesheet' type='text/css' href='/css/style.css'/>";
+
+	html = html + "<title>Movie Search!</title>";
+	html = html + '</head>'
+
+	html = html + '<body>'
+	html = html + "<div class='header'>";
+	html = html + '<h1 id="header-text">Movie Search!</h1>'
+	html = html + "</div>"
+
+	// Here's where we build the form YOU HAVE STUFF TO CHANGE HERE
+	html = html + '<form action="" method="POST" class="search">'
+	html = html + '<input  type="String" name="query_copy" />'
+	html = html + '<button name="func" value="add" onclick="addCallback()">Add</button>'
+	html = html + '<button name="func" value="delete" onclick="deleteCallback()">Delete</button>'
+	html = html + '</form>'
+
+	sendIndex(res, html);
 
 
-	var contentType = 'text/html'
-		, html = ''
+}
+
+function addCallback(post,res){
+
+	db.get("SELECT * FROM movies WHERE title='"+post.query_copy+"'", function(error,row){
+		if(row === undefined){
+			console.log("TELL MOMMA I MADE IT");
+
+			imdb.getReq({name:post.query_copy}, function(error, data) {
+				if(error)
+				{
+					console.error("DATA NOT FOUND",post.query_copy);
+					/*	info = "<li class=results'>" + query_copy+ "</li>";
+			info = info + "<li class='info'>No Information Found</li>";
+			*/
+					manageSetup(res);
+				}
+				else
+				{
+					db.run("INSERT INTO movies VALUES ('" + data.title + "','"+data.rating+"')", function(){
+						movies.push(data.title+ " ");
+						movies = movies.sort();
+
+						data = '';
+						manageSetup(res);
+
+					});
+				}
+
+
+
+			})
+		}
+		else {
+			manageSetup(res);
+		}
+	});
+}
+
+function deleteCallback(post, res){
+	db.get("SELECT * FROM movies WHERE title='"+post.query_copy+"'", function(error,row){
+		if(row === undefined){
+			manageSetup(res)
+		}
+		else{
+			db.run("DELETE FROM movies WHERE title='"+post.query_copy+"'", function(){
+				console.log("DELETED");
+
+				var index = movies.indexOf(post.query_copy+" ");
+				console.log("INDEX "+index);
+				movies.splice(index,1);
+
+				data = '';
+				manageSetup(res);
+			});
+		}
+	});
+}
+
+
+
+function searchSetup(res){
+	html = '';
 
 	html = html + '<html>'
 
@@ -366,6 +473,16 @@ function sendIndex(res) {
 	html = html + '<input type="String" name="search" />'
 	html = html + '<button type="submit">Search</button>'
 	html = html + '</form>'
+
+	sendIndex(res, html);
+
+
+}
+
+// Note: consider this your "index.html" for this assignment
+function sendIndex(res, html) {
+	var contentType = 'text/html'
+
 
 	html = html + '<div class="col">'
 	// Note: the next line is fairly complex. 
@@ -406,7 +523,9 @@ function sendIndex(res) {
 			html = html + results;
 			html = html + "</div>";
 			html = html + "<div class='links-div'>";
-			html = html + "<a href='/README.md' class='links'>README</a>";
+			html = html + "<a href='/README.md' class='links'>README</a>|";
+			html = html + "<a href='/' class='links'>Search</a>|";
+			html = html + "<a href='/manage/' class='links'>Manage</a>";
 			html = html + "</div class='links-div>";
 
 			html = html + '</body>'

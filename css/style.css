@@ -153,6 +153,7 @@ button {
 	margin-left: 5px;
 	height: 2em;
 	border: 1px solid #403D36;
+	width: 100px;
 }
 
 .result-div ul{
