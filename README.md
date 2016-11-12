@@ -8,23 +8,22 @@
 <h1>README</h1>
 <p>
 
+For A4 I have built upon my submission for A3 in order to create a self-expanding movie database. The idea is this - any time that a person searches for a movie,
+it first searches an SQLite database in an attempt to find the movie. If it does not find a perfect match, then it will search IMDb via the API and stores the data
+found. This data persists on the database, which will allow the search to (ideally) go faster the next time that the search is made. The "manage" page allows for manually
+altering this database, adding entries and removing them at will. All of the database entries are clickable to search for more information about that movie, and related movies
+on either the manage page or the search page. </p>
 
+<p>
 
-For my technical achievement, I have both utilized the IMDB API 
-listed on the course website in order to gether information 
-about the movies returned by the search, and implemented a sort of 
-"smarter search" that ranks results first by number of terms of the 
-query that are matched, and secondly by the index at which the first 
-matching term was found. In order to do this, I had to make the IMDB requests synchronous,
-otherwise there was no way of ensuring that the HTML would be written in the correct
- order. In order to make this happen, I utilized a library called deasync that would
- allow me to stall node.js until one function completed. </p>
- <p>
- Additionally, I have set up the search so that if the movie is not found in my small
- "database" listed, that it will search IMDB for the query. Additionally, if the query
- is only partially found, it will search IMDB as well.</p>
+In order to properly manage callbacks of multi-level requests (database then IMDb) I utilized a library called Async that allows for two callbacks in certain scenarios -
+such as a callback on each iteration of a map, and a callback after ALL iterations have completed. 
 
- <a href="/" class="links">Search Again</a>
- </body>
+</p>
+
+<div class="links-div">
+<a href="/README.md" class="links">README</a>|<a href="/" class="links">Search</a>|<a href="/manage/" class="links">Manage</a>
+</div>
+</body>
 
 </html>
