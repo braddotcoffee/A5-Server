@@ -270,7 +270,6 @@ function handleSearch(res, uri) {
     if (count <= 0)
     {
       imdbQuery(query_copy);
-      completeHTML(res,contentType);
     }
     results.map(function (result){
       var info;
