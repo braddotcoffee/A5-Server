@@ -136,6 +136,9 @@ td {
 	-moz-column-gap: 4em;
 	column-gap: 4em;
 }
+form {
+  width: 100%;
+}
 
 input {
 	height: 2em;
