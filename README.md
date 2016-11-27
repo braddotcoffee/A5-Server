@@ -2,23 +2,33 @@
 <html>
 <head>
 <title>README</title>
-<link rel='stylesheet' type='text/css' href='/css/style.css'>
+<link href='node_modules/bootstrap/dist/css/bootstrap.css' rel='stylesheet'>
+<link href='node_modules/bootstrap/dist/css/bootstrap-theme.css' rel='stylesheet'>
+<link href='/css/style.css' rel='stylesheet' type='text/css'/>
+<link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Open+Sans+Condensed:300" rel="stylesheet">
+
 </head>
 <body>
-<h1>README</h1>
-<p>
-
-For A4 I have built upon my submission for A3 in order to create a self-expanding movie database. The idea is this - any time that a person searches for a movie,
-it first searches an SQLite database in an attempt to find the movie. If it does not find a perfect match, then it will search IMDb via the API and stores the data
-found. This data persists on the database, which will allow the search to (ideally) go faster the next time that the search is made. The "manage" page allows for manually
-altering this database, adding entries and removing them at will. All of the database entries are clickable to search for more information about that movie, and related movies
-on either the manage page or the search page. </p>
+<div class="header">
+<h1 id="header-text">README</h1>
+</div>
 
 <p>
-
-In order to properly manage callbacks of multi-level requests (database then IMDb) I utilized a library called Async that allows for two callbacks in certain scenarios -
-such as a callback on each iteration of a map, and a callback after ALL iterations have completed. 
-
+For A5 I have built upon my previous submission for A4. It contains all of the same functionality, only now it deals with the main bulk of rendering through AJAX. The key features of this site include:
+<ul>
+<li class='results'>Smarter Search</li>
+<ul>
+<li>Ranks results by relevance (somewhat)</li>
+<li>Automatically adds searched movies to database</li>
+<li>Parses IMDb for more information on movies</li>
+</ul>
+<li class='results'>Database Management</li>
+<ul>
+<li>Add movies to database directly via Manage page</li>
+<li>Delete movies from database directly via Manage page</li>
+<li>Ratings are parsed from IMDb for movies added to database</li>
+</ul>
+</ul>
 </p>
 
 <div class="links-div">
