@@ -1,84 +1,157 @@
-8:04:00 PM web.1 |  > cs4241-a3-YOURNAME@0.0.1 start /home/bwbonanno/Documents/Webware/A4/A3-Filters
-8:04:00 PM web.1 |  > node server.js
-8:04:00 PM web.1 |  listening on 8080
-8:04:01 PM web.1 |  Completed Batman vs. Superman 
-8:04:01 PM web.1 |  Completed Aladdin 
-8:04:01 PM web.1 |  Completed Citizen Kane 
-8:04:01 PM web.1 |  Completed Breakfast Club 
-8:04:01 PM web.1 |  Completed Fight Club 
-8:04:01 PM web.1 |  Completed Doctor Strange 
-8:04:01 PM web.1 |  Completed Guardians of the Galaxy 
-8:04:01 PM web.1 |  Completed A Beautiful Mind 
-8:04:01 PM web.1 |  Completed Harry Potter 
-8:04:01 PM web.1 |  Completed Gravity 
-8:04:01 PM web.1 |  Completed Jaws 
-8:04:01 PM web.1 |  Completed 500 Days of Summer 
-8:04:01 PM web.1 |  Completed Hitchikers Guide to the Galaxy 
-8:04:01 PM web.1 |  Completed Legends of the Fall 
-8:04:01 PM web.1 |  Completed Lion King 
-8:04:01 PM web.1 |  Completed Little Miss Sunshine 
-8:04:01 PM web.1 |  Completed Lord of the Rings 
-8:04:01 PM web.1 |  Completed Mulan 
-8:04:01 PM web.1 |  Completed Pulp Fiction 
-8:04:01 PM web.1 |  Completed Rain Man 
-8:04:01 PM web.1 |  Completed Sharknado 
-8:04:01 PM web.1 |  Completed Snakes on a Plane 
-8:04:01 PM web.1 |  Completed Iron Man 
-8:04:01 PM web.1 |  Completed Star Trek 
-8:04:01 PM web.1 |  Completed The Bee Movie 
-8:04:01 PM web.1 |  Completed A Christmas Carol 
-8:04:01 PM web.1 |  Completed Beetlejuice 
-8:04:01 PM web.1 |  Completed The Big Lebowski 
-8:04:01 PM web.1 |  Completed The Departed 
-8:04:01 PM web.1 |  Completed The Fountain 
-8:04:01 PM web.1 |  Completed The Godfather 
-8:04:01 PM web.1 |  Completed The Great Gatsby 
-8:04:01 PM web.1 |  Completed The Hunger Games 
-8:04:01 PM web.1 |  Completed The Jungle Book 
-8:04:01 PM web.1 |  Completed The Truman Show 
-8:04:01 PM web.1 |  Completed Star Wars 
-8:04:01 PM web.1 |  Completed Jaws 2 
-8:04:01 PM web.1 |  Completed Jaws 3 
-8:04:01 PM web.1 |  All Done!
-8:04:06 PM web.1 |  query_copy=Lion+King&func=delete
-8:04:06 PM web.1 |  DELETED
-8:04:06 PM web.1 |  INDEX 19
-8:04:06 PM web.1 |  Completed 500 Days of Summer 
-8:04:06 PM web.1 |  Completed Batman vs. Superman 
-8:04:06 PM web.1 |  Completed Beetlejuice 
-8:04:06 PM web.1 |  Completed Breakfast Club 
-8:04:06 PM web.1 |  Completed Citizen Kane 
-8:04:06 PM web.1 |  Completed Doctor Strange 
-8:04:06 PM web.1 |  Completed Fight Club 
-8:04:06 PM web.1 |  Completed Gravity 
-8:04:06 PM web.1 |  Completed Guardians of the Galaxy 
-8:04:06 PM web.1 |  Completed Harry Potter 
-8:04:06 PM web.1 |  Completed Hitchikers Guide to the Galaxy 
-8:04:06 PM web.1 |  Completed A Beautiful Mind 
-8:04:06 PM web.1 |  Completed Iron Man 
-8:04:06 PM web.1 |  Completed Aladdin 
-8:04:06 PM web.1 |  Completed Jaws 3 
-8:04:06 PM web.1 |  Completed Legends of the Fall 
-8:04:06 PM web.1 |  Completed Little Miss Sunshine 
-8:04:06 PM web.1 |  Completed Lord of the Rings 
-8:04:06 PM web.1 |  Completed Mulan 
-8:04:06 PM web.1 |  Completed Pulp Fiction 
-8:04:06 PM web.1 |  Completed Rain Man 
-8:04:06 PM web.1 |  Completed Sharknado 
-8:04:06 PM web.1 |  Completed Star Trek 
-8:04:06 PM web.1 |  Completed The Bee Movie 
-8:04:06 PM web.1 |  Completed Jaws 
-8:04:06 PM web.1 |  Completed Jaws 2 
-8:04:06 PM web.1 |  Completed The Departed 
-8:04:06 PM web.1 |  Completed The Fountain 
-8:04:06 PM web.1 |  Completed The Big Lebowski 
-8:04:06 PM web.1 |  Completed The Godfather 
-8:04:06 PM web.1 |  Completed The Great Gatsby 
-8:04:06 PM web.1 |  Completed The Hunger Games 
-8:04:06 PM web.1 |  Completed The Truman Show 
-8:04:06 PM web.1 |  Completed A Christmas Carol 
-8:04:06 PM web.1 |  Completed The Jungle Book 
-8:04:06 PM web.1 |  Completed Snakes on a Plane 
-8:04:06 PM web.1 |  Completed Star Wars 
-8:04:06 PM web.1 |  All Done!
+11:08:09 PM web.1 |  > cs4241-a3-YOURNAME@0.0.1 start /home/bwbonanno/Documents/Webware/A5/A3-Filters
+11:08:09 PM web.1 |  > node server.js
+11:08:09 PM web.1 |  listening on 8080
+11:08:14 PM web.1 |  Completed 500 Days of Summer 
+11:08:14 PM web.1 |  Completed A Beautiful Mind 
+11:08:14 PM web.1 |  Completed A Christmas Carol 
+11:08:14 PM web.1 |  Completed Beetlejuice 
+11:08:14 PM web.1 |  Completed Breakfast Club 
+11:08:14 PM web.1 |  Completed Citizen Kane 
+11:08:14 PM web.1 |  Completed Doctor Strange 
+11:08:14 PM web.1 |  Completed Fight Club 
+11:08:14 PM web.1 |  Completed Gravity 
+11:08:14 PM web.1 |  Completed Guardians of the Galaxy 
+11:08:14 PM web.1 |  Completed Harry Potter 
+11:08:14 PM web.1 |  Completed Hitchikers Guide to the Galaxy 
+11:08:14 PM web.1 |  Completed Iron Man 
+11:08:14 PM web.1 |  Completed Jaws 
+11:08:14 PM web.1 |  Completed Jaws 2 
+11:08:14 PM web.1 |  Completed Jaws 3 
+11:08:14 PM web.1 |  Completed Legends of the Fall 
+11:08:14 PM web.1 |  Completed Little Miss Sunshine 
+11:08:14 PM web.1 |  Completed Lord of the Rings 
+11:08:14 PM web.1 |  Completed Mulan 
+11:08:14 PM web.1 |  Completed Pulp Fiction 
+11:08:14 PM web.1 |  Completed Rain Man 
+11:08:14 PM web.1 |  Completed Sharknado 
+11:08:14 PM web.1 |  Completed Snakes on a Plane 
+11:08:14 PM web.1 |  Completed Star Trek 
+11:08:14 PM web.1 |  Completed Star Wars 
+11:08:14 PM web.1 |  Completed The Bee Movie 
+11:08:14 PM web.1 |  Completed The Big Lebowski 
+11:08:14 PM web.1 |  Completed The Departed 
+11:08:14 PM web.1 |  Completed The Fountain 
+11:08:14 PM web.1 |  Completed The Godfather 
+11:08:14 PM web.1 |  Completed The Great Gatsby 
+11:08:14 PM web.1 |  Completed The Hunger Games 
+11:08:14 PM web.1 |  Completed The Jungle Book 
+11:08:14 PM web.1 |  Completed The Truman Show 
+11:08:14 PM web.1 |  Completed Aladdin 
+11:08:14 PM web.1 |  Completed Batman vs. Superman 
+11:08:14 PM web.1 |  All Done!
+11:08:17 PM web.1 |  Completed 500 Days of Summer 
+11:08:17 PM web.1 |  Completed Batman vs. Superman 
+11:08:17 PM web.1 |  Completed Beetlejuice 
+11:08:17 PM web.1 |  Completed Breakfast Club 
+11:08:17 PM web.1 |  Completed Citizen Kane 
+11:08:17 PM web.1 |  Completed Doctor Strange 
+11:08:17 PM web.1 |  Completed Fight Club 
+11:08:17 PM web.1 |  Completed Gravity 
+11:08:17 PM web.1 |  Completed Guardians of the Galaxy 
+11:08:17 PM web.1 |  Completed Harry Potter 
+11:08:17 PM web.1 |  Completed Hitchikers Guide to the Galaxy 
+11:08:17 PM web.1 |  Completed Iron Man 
+11:08:17 PM web.1 |  Completed Jaws 
+11:08:17 PM web.1 |  Completed A Beautiful Mind 
+11:08:17 PM web.1 |  Completed Jaws 2 
+11:08:17 PM web.1 |  Completed Jaws 3 
+11:08:17 PM web.1 |  Completed Legends of the Fall 
+11:08:17 PM web.1 |  Completed Little Miss Sunshine 
+11:08:17 PM web.1 |  Completed Mulan 
+11:08:17 PM web.1 |  Completed Pulp Fiction 
+11:08:17 PM web.1 |  Completed Sharknado 
+11:08:17 PM web.1 |  Completed Snakes on a Plane 
+11:08:17 PM web.1 |  Completed Star Trek 
+11:08:17 PM web.1 |  Completed Star Wars 
+11:08:17 PM web.1 |  Completed The Bee Movie 
+11:08:17 PM web.1 |  Completed The Big Lebowski 
+11:08:17 PM web.1 |  Completed The Departed 
+11:08:17 PM web.1 |  Completed The Fountain 
+11:08:17 PM web.1 |  Completed The Godfather 
+11:08:17 PM web.1 |  Completed The Great Gatsby 
+11:08:17 PM web.1 |  Completed The Hunger Games 
+11:08:17 PM web.1 |  Completed The Jungle Book 
+11:08:17 PM web.1 |  Completed The Truman Show 
+11:08:17 PM web.1 |  Completed Rain Man 
+11:08:17 PM web.1 |  Completed A Christmas Carol 
+11:08:17 PM web.1 |  Completed Aladdin 
+11:08:17 PM web.1 |  Completed Lord of the Rings 
+11:08:17 PM web.1 |  All Done!
+11:08:30 PM web.1 |  Completed A Christmas Carol 
+11:08:30 PM web.1 |  Completed Aladdin 
+11:08:30 PM web.1 |  Completed Beetlejuice 
+11:08:30 PM web.1 |  Completed Batman vs. Superman 
+11:08:30 PM web.1 |  Completed Citizen Kane 
+11:08:30 PM web.1 |  Completed Doctor Strange 
+11:08:30 PM web.1 |  Completed Fight Club 
+11:08:30 PM web.1 |  Completed 500 Days of Summer 
+11:08:30 PM web.1 |  Completed Gravity 
+11:08:30 PM web.1 |  Completed Harry Potter 
+11:08:30 PM web.1 |  Completed Hitchikers Guide to the Galaxy 
+11:08:30 PM web.1 |  Completed Iron Man 
+11:08:30 PM web.1 |  Completed Jaws 
+11:08:30 PM web.1 |  Completed Jaws 2 
+11:08:30 PM web.1 |  Completed Breakfast Club 
+11:08:30 PM web.1 |  Completed A Beautiful Mind 
+11:08:30 PM web.1 |  Completed Legends of the Fall 
+11:08:30 PM web.1 |  Completed Jaws 3 
+11:08:30 PM web.1 |  Completed Mulan 
+11:08:30 PM web.1 |  Completed Pulp Fiction 
+11:08:30 PM web.1 |  Completed Rain Man 
+11:08:30 PM web.1 |  Completed Sharknado 
+11:08:30 PM web.1 |  Completed Snakes on a Plane 
+11:08:30 PM web.1 |  Completed The Bee Movie 
+11:08:30 PM web.1 |  Completed The Big Lebowski 
+11:08:30 PM web.1 |  Completed The Departed 
+11:08:30 PM web.1 |  Completed The Fountain 
+11:08:30 PM web.1 |  Completed The Godfather 
+11:08:30 PM web.1 |  Completed The Great Gatsby 
+11:08:30 PM web.1 |  Completed The Hunger Games 
+11:08:30 PM web.1 |  Completed The Jungle Book 
+11:08:30 PM web.1 |  Completed Guardians of the Galaxy 
+11:08:30 PM web.1 |  Completed Little Miss Sunshine 
+11:08:30 PM web.1 |  Completed Lord of the Rings 
+11:08:30 PM web.1 |  Completed The Truman Show 
+11:08:30 PM web.1 |  Completed Star Wars 
+11:08:30 PM web.1 |  Completed Star Trek 
+11:08:30 PM web.1 |  All Done!
+11:09:31 PM web.1 |  Completed A Christmas Carol 
+11:09:31 PM web.1 |  Completed Citizen Kane 
+11:09:31 PM web.1 |  Completed A Beautiful Mind 
+11:09:31 PM web.1 |  Completed Fight Club 
+11:09:31 PM web.1 |  Completed Gravity 
+11:09:31 PM web.1 |  Completed Guardians of the Galaxy 
+11:09:31 PM web.1 |  Completed Harry Potter 
+11:09:31 PM web.1 |  Completed Hitchikers Guide to the Galaxy 
+11:09:31 PM web.1 |  Completed Iron Man 
+11:09:31 PM web.1 |  Completed Jaws 
+11:09:31 PM web.1 |  Completed Jaws 2 
+11:09:31 PM web.1 |  Completed Jaws 3 
+11:09:31 PM web.1 |  Completed Juno 
+11:09:31 PM web.1 |  Completed Aladdin 
+11:09:31 PM web.1 |  Completed Beetlejuice 
+11:09:31 PM web.1 |  Completed Breakfast Club 
+11:09:31 PM web.1 |  Completed Legends of the Fall 
+11:09:31 PM web.1 |  Completed Doctor Strange 
+11:09:31 PM web.1 |  Completed 500 Days of Summer 
+11:09:31 PM web.1 |  Completed Mulan 
+11:09:31 PM web.1 |  Completed Rain Man 
+11:09:31 PM web.1 |  Completed Sharknado 
+11:09:31 PM web.1 |  Completed Snakes on a Plane 
+11:09:31 PM web.1 |  Completed Star Trek 
+11:09:31 PM web.1 |  Completed Star Wars 
+11:09:31 PM web.1 |  Completed Little Miss Sunshine 
+11:09:31 PM web.1 |  Completed The Big Lebowski 
+11:09:31 PM web.1 |  Completed Pulp Fiction 
+11:09:31 PM web.1 |  Completed The Fountain 
+11:09:31 PM web.1 |  Completed The Godfather 
+11:09:31 PM web.1 |  Completed The Departed 
+11:09:31 PM web.1 |  Completed The Great Gatsby 
+11:09:31 PM web.1 |  Completed The Hunger Games 
+11:09:31 PM web.1 |  Completed The Jungle Book 
+11:09:31 PM web.1 |  Completed The Truman Show 
+11:09:31 PM web.1 |  Completed The Bee Movie 
+11:09:31 PM web.1 |  Completed Batman vs. Superman 
+11:09:31 PM web.1 |  Completed Lord of the Rings 
+11:09:31 PM web.1 |  All Done!
 [DONE] Killing all processes with signal  SIGINT

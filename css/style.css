@@ -1,55 +1,49 @@
 body{
-	background: rgb(255,246,246); 
+	background: rgb(255,255,255); 
 	font-size: 30px; !important
-	color: rgb(64,61,61);
+	color: rgb(64,64,64);
 	font-family: "Open Sans Condensed", sans-serif; !important
 	margin: 0px;
 }
 
 body * {
-	background: rgb(255,246,246);
+	/*background: rgb(255,246,246);*/
 }
 
-#header-text, .links, table{
+.links, table{
 	margin: 0 auto;
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
 
 .header{
-	background-color: rgb(191,184,184);
-	/*background-image: url("http://www.clipartsfree.net/vector/large/14260-berlin-skyline-vector.png");*/
-	/*background-color: #BFBFBF;*/
-	padding-top: 3px;
-	padding-bottom: 30px;
-	margin-bottom: 10px;
-	border-bottom: 1px solid rgb(64,61,61);
+    background: rgb(64,64,64);
+    color: rgb(255,255,255);
+		border-bottom: 1px solid rgb(64,64,64);
 }
 
 #header-text {
-	background-position: center center;
-	background-color: rgb(229,221,221);
+	/*background-color: rgb(229,221,221);
 	background-size: cover;
 	/* Fonts Tweaks */ 
 	font-size: 42px;
-	font-family: 'Trirong', serif;
+  letter-spacing: 4px;
 
 	/* Alignment */
 	padding-left: 0px;
 	padding-right: 0px;
-	width: 600px;
-	text-align: center;
-	margin-bottom: 30px;
-	margin-top: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+	text-align: left;
 
 
 	/* Color */
-	color: rgb(64,61,61);
-	border: 1px solid rgb(64,61,61);
+	/*color: rgb(64,61,61);
+	border: 1px solid rgb(64,61,61);*/
 }
 
 h1 {
-	background-color: rgb(191,184,184);
+	/*background-color: rgb(191,184,184);*/
 	margin-top: 0px;
 }
 
@@ -60,8 +54,8 @@ h2 {
 	font-family: 'Trirong', serif;
 	padding-top: 0px;
 	margin-top: 0px;
-	border: 1px solid #403D36;
-	background: rgb(191,184,184);
+	/*border: 1px solid #403D36;
+	background: rgb(191,184,184);*/
 	text-align: center;
 }
 
@@ -145,17 +139,24 @@ td {
 
 input {
 	height: 2em;
-	background: rgb(191,184,184);
-	border: 1px solid #403D36;
+	background: rgb(255,255,255);
+	border: 1px solid rgb(64,64,64);
+  border-radius: 5px;
 }
 
 button {
 	margin-left: 5px;
 	height: 2em;
-	border: 1px solid #403D36;
+	border: 1px solid rgb(64,64,64);
+  border-radius: 5px;
 	width: 100px;
+  background: rgb(255,255,255);
 }
 
+button:hover {
+	transform: scale(1.05);
+	-moz-transform: scale(1.05);
+}
 .result-div ul{
 	margin: 0 auto;
 	display: table;
@@ -184,9 +185,9 @@ a:hover{
 	break-inside: avoid;
 	/* IE 10+ */
 	margin-bottom: 20px;
-	background-color: #fff;
-	border: 1px solid transparent;
-	border-radius: 4px;
+	/*background-color: #fff;*/
+	border: 1px solid rgb(191,191,191);
+	border-radius: 5px;
 	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
 	box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
 }
@@ -198,14 +199,16 @@ a:hover{
 
 .panel-body {
 	padding: 15px;
-	background: rgb(229,221,221);
+	/*background: rgb(229,221,221);*/
 }
 .panel-heading {
 	padding: 10px 15px;
 	border-bottom: 1px solid transparent;
 	border-top-left-radius: 3px;
 	border-top-right-radius: 3px;
-	background: rgb(191,184,184);
+	/*background: rgb(191,184,184);*/
+  color: rgb(255,255,255);
+  background: rgb(64,64,64);
 }
 .panel-heading > .dropdown .dropdown-toggle {
 	color: inherit;
@@ -214,7 +217,7 @@ a:hover{
 	margin-top: 0;
 	margin-bottom: 0;
 	color: inherit;
-	background: rgb(191,184,184);
+	/*background: rgb(191,184,184);*/
 }
 .panel-title > a,
 .panel-title > small,
@@ -226,7 +229,7 @@ a:hover{
 }
 .panel-footer {
 	padding: 10px 15px;
-	background-color: #f5f5f5;
+	/*background-color: #f5f5f5;*/
 	border-top: 1px solid #ddd;
 	border-bottom-right-radius: 3px;
 	border-bottom-left-radius: 3px;

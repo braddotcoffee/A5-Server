@@ -1,0 +1,84 @@
+<html>
+  <head>
+    <link href='/node_modules/bootstrap/dist/css/bootstrap.css' rel='stylesheet'>
+    <link href='/node_modules/bootstrap/dist/css/bootstrap-theme.css' rel='stylesheet'>
+    <link href='/css/style.css' rel='stylesheet' type='text/css'/>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Open+Sans+Condensed:300" rel="stylesheet">
+    <title> Movie Search</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <div class='header'>
+      <h1 id="header-text">Manage Movies</h1>
+    </div>
+
+    <!-- Search Form -->
+    <form action="" method="POST" class="search">
+      <input type="String" name="query_copy" id='manage_box'/>
+      <button type="button" name="func" value="add" onclick="populate('/add');">Add</button>
+      <button type="button" name="func" value="delete" onclick="populate('/delete');">Delete</button>
+    </form>
+
+    <!-- Movie Columns -->
+    <div class='col' id='MovPanels'>
+      <script>
+
+        function populate(url) {
+          var el = document.getElementById('manage_box');
+
+          var req = new XMLHttpRequest();
+
+          //req.onload = function () {
+          //  makeReq('/list');
+          //};
+          req.onreadystatechange = function(){
+            console.log("READYSTATECHANGE");
+            handleRes(req);
+          }
+
+          req.open('POST', url, true);
+          req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+          req.send('query_copy='+el.value);
+          el.value='';
+        }
+
+
+        makeReq('/list');
+
+        function makeReq(url){
+          var req = new XMLHttpRequest();
+
+          req.onreadystatechange = function(){
+            handleRes(req);
+          }
+
+          req.open("GET", url);
+          req.send();
+        }
+
+        function handleRes(req){
+          if(req.readyState != XMLHttpRequest.DONE)
+            return;
+
+          if(req.status === 200){
+            console.log("PANELS FILLING");
+            var el = document.getElementById("MovPanels");
+            el.innerHTML = JSON.parse(req.responseText)
+          }
+
+        }
+
+      </script>
+
+    </div>
+
+    <div class='links-div'>
+      <a href='/README.md' class='links'>README</a>|
+      <a href='/' class='links'>Search</a>|
+      <a href='/manage/' class='links'>Manage</a>
+    </div>
+
+  </body>
+</html>
+

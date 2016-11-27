@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <link href='node_modules/bootstrap/dist/css/bootstrap.css' rel='stylesheet'>
+    <link href='node_modules/bootstrap/dist/css/bootstrap-theme.css' rel='stylesheet'>
+    <link href='/css/style.css' rel='stylesheet' type='text/css'/>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Open+Sans+Condensed:300" rel="stylesheet">
+    <title> Results</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <div class='header'>
+      <h1 id="header-text">Results</h1>
+    </div>
+
+    <div id="ResultsPage">
+
+    </div>
+
+    <script>
+
+    makeReq("/results");
+
+    function makeReq(url){
+      var req = new XMLHttpRequest();
+      
+      req.onreadystatechange = function(){
+        handleRes(req);
+      }
+
+      req.open("GET", url);
+      req.send();
+    }
+
+    function handleRes(req){
+      if(req.readyState != XMLHttpRequest.DONE)
+        return;
+      
+      if(req.status === 200){
+        var el = document.getElementById("ResultsPage");
+        el.innerHTML = JSON.parse(req.responseText)
+      }
+
+    }
+
+    </script>
+
+    </div>
+
+    <div class='links-div'>
+      <a href='/README.md' class='links'>README</a>|
+      <a href='/' class='links'>Search</a>|
+      <a href='/manage/' class='links'>Manage</a>
+    </div>
+
+  </body>
+</html>
+
