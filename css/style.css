@@ -148,11 +148,12 @@ input {
 }
 
 button {
+  padding-left: 1%;
+  padding-right: 1%;
 	margin-left: 5px;
 	height: 2em;
 	border: 1px solid rgb(64,64,64);
   border-radius: 5px;
-	width: 10%;
   background: rgb(255,255,255);
 }
 
