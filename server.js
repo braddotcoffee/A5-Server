@@ -163,7 +163,7 @@ function secondSort(hashmap, results, delta)
     results_sort.push([result, hashmap.get(result)]);
   });
   return sort(results_sort, results, delta);
-}
+}, true
 function imdbQuery(query_copy)
 {
   imdb.getReq({name:query_copy}, function(error, data) {
